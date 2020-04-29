@@ -1,0 +1,168 @@
+body{
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+header{
+    font-size: 26px;
+    height:60px;
+    display: flex;
+    justify-content: space-around;
+    border-top: black solid 5px;
+    border-bottom: lightgray solid 1px;
+    align-items: center;
+    margin-top: 0;
+
+
+
+}
+.green_fox_link{
+    float: left;
+    margin-left: 150px;
+}
+.about_link{
+    float: right;
+    margin-right: 150px;
+}
+.headerlink{
+    color: #111111;
+    text-decoration: none;
+
+}
+.skywalker_div{
+    width: 100%;
+    height: 390px;
+    position: relative;
+}
+#skyw_img{
+    width: 100%;
+    height: 100%;
+}
+#h2_my_name_l_s{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    color: aliceblue;
+}
+section{
+    font-size: 120%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+blockquote{
+
+    font-size: 190%;
+    margin-top: 60px;
+    margin-left: 1px;
+
+
+}
+.cited_text{
+    margin-left:-50px;
+}
+.revrse_big_text{
+
+
+    display: flex;
+    background-color: #383736;
+
+    height: 200px;
+    font-size: 45px;
+    color: white;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15mm;
+}
+.p_uppercase{
+    text-transform: uppercase;
+    font-family: Monospaced ;
+    margin-left: 20%;
+    font-size: 140%;
+    margin-bottom: 8mm;
+}
+
+.p_strong{
+    font-weight: 500;
+    font-size: 160%;
+    margin-bottom: 5mm;
+    line-height: 110%;
+}
+.p_normal{
+    font-size: 105%;
+    line-height: 102%;
+}
+.p_italic{
+    font-style: italic;
+}
+.p_strong.repeating{
+    margin-bottom: 0;
+}
+.p_italic.repeating{
+    margin-top: 0;
+}
+.mini_ul{
+    font-size: 80%;
+    line-height: 100%;
+}
+footer{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.arrows{
+    width: 70px;
+    height: 130px;
+    background-color: #969590;
+    position: fixed;
+    align-items: center;
+}
+.left{
+    border-top-right-radius: 900px;
+    border-bottom-right-radius: 900px;
+    top: 50%;
+    left: -45px;
+}
+.right{
+
+    border-bottom-left-radius: 900px;
+    border-top-left-radius: 900px;
+    top: 50%;
+    right: -45px;
+}
+.left:hover{
+
+    left: 0;
+    background-color:#575652 ;
+}
+.right:hover{
+    right: 0;
+    background-color: #575652;
+}
+.arrows_text_link{
+    font-size: 70px;
+    text-decoration: none;
+
+
+    margin: auto;
+    color: darkgrey;
+
+
+
+}
+.arrows_text_link.right{
+    margin-left: 40px ;
+}
+.arrows_text_link:hover{
+    text-decoration: none;
+
+    border-bottom-right-radius: 400px;
+}
