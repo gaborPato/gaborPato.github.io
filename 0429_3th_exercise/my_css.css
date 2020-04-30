@@ -1,0 +1,33 @@
+div{
+
+
+    display: flex;
+  align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+
+    width: 500px;
+    height: 80px;
+margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    border: 1px solid blue;
+}
+p{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+
+
+}
+
+.blue_rectangle{
+    background-color: #0D91A1;
+}
+.purple_rectangle{
+    background-color: purple;
+}
+.oragne_div{
+    background-color: #ff3712;
+}
