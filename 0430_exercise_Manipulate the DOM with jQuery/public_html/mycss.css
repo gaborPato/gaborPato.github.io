@@ -1,0 +1,19 @@
+#big_p{
+   width: 350px;
+    font-size: 120%;
+
+
+}
+h1{
+    color: orangered;
+}
+h2{
+    color: purple;
+}
+.colorListItem{
+    color: palevioletred;
+}
+
+.underLine{
+    text-decoration: underline;
+}
