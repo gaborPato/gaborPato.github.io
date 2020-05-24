@@ -1,6 +1,8 @@
 
-const QUESTION_NUMBER= 7;
-const ANSWER_NUMBER=3;
+
+const QUESTION_NUMBER = 7;
+const ANSWER_NUMBER = 3;
+const GROUP_COUNT = 3;
 
 class DogBreed {
 
@@ -10,289 +12,230 @@ class DogBreed {
 
     }
 
-
 }
+var dog_name = [
 
-let dog_name = [
-    "Ausztrál Kelpi",
-    "Abruzzói juhászkutya",
-    "Affenpincher",
-    "Afgán agár",
-    "Afrikai oroszlánkutya",
-    "Akita Inu",
-    "Alaszkai malamut",
-    "Amerikai bulldog",
-    "Angol Agár",
-    "Angol Bulldog",
-    "Argentín dog",
-    "Atlaszi hegyikutya",
-    "Ausztrál juhászkutya",
-    "Ausztrál terrier",
-    "Border Collie",
+    //group1:
+    ["Whipet", "Törpe Spicc", "Törpe Pincher",
+        "Tacskó", "Tibeti Terrier", "Törpe Schnauzer",
+        "Pekingi Palotakutya", "Orosz Fekete Terrier",
+        "Olasz Kopó", "Uszkár", "Spániel", "Skót Terrier",
+        "Skót Juhász", "Shar-Pei", "Si-cu", "Német Spicc", "Máltai Selyemkutya",
+        "Kínai Kopaszkutya", "Jack Russel Terrier", "Havannai Pincher", "Francia Bulldog", "Fáraókutya",
+        "Erdélyi Kopó", "Csivava", "Csau-csau", "Auszrtál Terrier", "Affenpincher"
+    ],
 
-    "Belga juhászkutya",
-    "Berni pásztorkutya",
-    "Bernáthegyi",
-    "Bordeaux-i dog",
-    "Boxer",
-    "Bullmasztif",
-
-    "Canne corso",
-    "Csau Csau",
-    "Csivava",
-
-    "Dalmata",
-    "Dobbermann",
-
-    "Eszkimókutya",
-    "Erdélyi kopó",
-
-    "Fáraókutya",
-    "Francia bulldog",
-
-    "Golden Retriver",
-    "Grönlandi kutya",
-
-    "Havannai Pincs",
-    "Husky",
-
-    "Ír szetter",
-
-    "Jack Russell-terrier",
-
-    "Kárpáti pásztoukuya",
-    "Karéliai medvekutya",
-    "Kínai kopaszkutya",
-    "Komondor",
-    "Kuvasz",
-
-    "Labrador Retriver",
-
-    "Magyar Agár",
-
-    "Máltai selyemkutya",
-    "Mopsz",
-    "Mudi",
-
-    "Nápolyi Masztiff",
-    "Német dog",
-    "Német juhászkutya",
-    "Német spicc",
-    "Német vizsla",
-
-    "Olasz kopó",
-    "Olasz agár",
-    "Orosz fekete terrier",
-
-    "Pekingi palotakutya",
-    "Pireneusi Masztiff",
-    "Puli",
-    "Pumi",
+    //group2:
+    [
+        'Afgán Agár', 'Angol Agár', 'Auszrál Juhász', 'Belga Juhász', 'Border Collie',
+        'Dalmata', 'Eszkimókutya', 'Golden Retriver', 'Ír szetter', 'Komondor', 'Kuvasz',
+        'Labrador', 'Magyar Agár', 'Mopsz', 'Mudi', 'Német Juhász', 'Német Vizsla', 'Olasz Agár', 'Puli'
+                , 'Pumi', 'Spanyol Kopó', 'Vizsla'
 
 
 
-    "Rottweiler",
+    ],
 
+    //group3:
+    ['Karéliai Medvekutya', 'Kárpáti Pásztor', 'Husky', "Görnlandi Kutya", 'Dobberman', 'Canne Corso'
+                , 'Bullmasztif', 'Boxer', 'Bordeauxi Dog', 'Bernáthegyi', 'Berni Pásztor', 'Atlaszi Hegyikutya'
+                , "Argentín Dog", 'Angol Bulldog', 'Amerikai Bulldog', 'Alaszkai Malamut', 'Akita Inu', 'Afrikai Oroszlánkutya',
+        'Abbrúzoi Juhász', 'Ausztrál Kelpie', 'Nápolyi Massztif', 'Német Dog', 'Pireneusi Masztiff', "Rottweiler",
+        'Staffordshire Terrier', 'Újfullandi']
 
-
-
-    "Si-cu",
-    "Shar-pei",
-    "Skót Juhász",
-
-    "Skót terrier",
-    
-    "Spániel",
-    "Spanyol kopó",
-    "Staffordshire bullterrier",
-
-
-    "Törpe schnauzer",
-    "Tibeti terrier",
-    "Tacskó",
-    "Törpe pinscer",
-
-
-    "Törpespicc",
-
-
-    "Újfullandi",
-    "Uszkár",
-
-    "Vizsla",
-
-    "Whippet"
-
-];
-
-let dog_path = [
-"Data/Pictures/australskakelpie.jpg",
-    "Data/Pictures/abruzzo_juhasz.jpg",
-    "Data/Pictures/affenpincher.jpg",
-    "Data/Pictures/afghan_agar.jpg",
-    'Data/Pictures/afr_oroszl_kutya.jpg',
-    "Data/Pictures/akita_inu.jpeg",
-    "Data/Pictures/alaszkai_malam.jpg",
-    "Data/Pictures/amerikai_bulldog.jpg",
-    " Data/Pictures/angol_agar.jpg",
-    "Data/Pictures/angol_bulldog.jpg",
-    "Data/Pictures/argentin_dog.jpeg",
-    "Data/Pictures/atlaszi_hegyikutya.jpg",
-    "Data/Pictures/ausztr_juhasz.jpg",
-    "Data/Pictures/ausztr_terrier.jpg",
-    "Data/Pictures/border_collie.jpg",
-    "Data/Pictures/belga_juhasz.jpg",
-    "Data/Pictures/berni_pasztor.jpg",
-    "Data/Pictures/bernathegyi.png",
-
-    "Data/Pictures/bordoi_dog.jpg",
-    "Data/Pictures/boxer.jpeg",
-    "Data/Pictures/bullmasztif.jpg",
-
-    "Data/Pictures/canne_corso.jpeg",
-    "Data/Pictures/csau.jpg",
-    "Data/Pictures/csivava.jpg",
-
-    "Data/Pictures/dalmata.jpg",
-    "Data/Pictures/dobberman.jpg",
-    "Data/Pictures/eszkimo.jpg",
-    "Data/Pictures/erdelyi_kopo.jpg",
-
-
-    "Data/Pictures/farao_ku.jpg",
-    "Data/Pictures/francia_bull.jpg",
-
-    "Data/Pictures/golden_retr.jpg",
-    "Data/Pictures/gorlandi_kutya.jpg",
-
-    "Data/Pictures/havannai_pincs.jpg",
-    "Data/Pictures/husky.jpeg",
-
-    "Data/Pictures/ir_szetter.jpg",
-
-    "Data/Pictures/jack_russel.jpg",
-    "Data/Pictures/karpati_juhasz.jpg",
-    "Data/Pictures/kar_medve_kutya.jpg",
-
-    "Data/Pictures/kinai_kopasz.jpg",
-    "Data/Pictures/komondor.jpg",
-    "Data/Pictures/kuvasz.jpg",
-
-    "Data/Pictures/labrador.jpg",
-
-    "Data/Pictures/magyar_agar.jpg",
-
-    "Data/Pictures/maltai_selyem.jpg",
-    "Data/Pictures/mopsz.jpg",
-    "Data/Pictures/mudi.jpg",
-
-    "Data/Pictures/napolyi_masztiff.png",
-    "Data/Pictures/nemet_dog.jpg",
-    "Data/Pictures/nemet_juhasz.jpg",
-    "Data/Pictures/nemet_spicc.jpg",
-    "Data/Pictures/nemet_vizsla.jpg",
-    "Data/Pictures/olasz_kopo.jpg",
-    "Data/Pictures/olasz_agar.jpg",
-
-    "Data/Pictures/orosz_fek_terrier.jpg",
-
-    "Data/Pictures/pekingi_palotakutya.jpg",
-    "Data/Pictures/pireneusi_masztif.jpg",
-    "Data/Pictures/puli.jpg",
-    "Data/Pictures/pumi.jpg",
-
-    "Data/Pictures/rottweiler.jpg",
-
-
-    "Data/Pictures/si_cu.jpeg",
-    "Data/Pictures/shar_pei.jpg",
-    "Data/Pictures/skot_juhasz.jpg",
-    "Data/Pictures/skot_terrier.jpg",
-    "Data/Pictures/spaniel.jpg",
-    "Data/Pictures/spanyol_kopo.jpg",
-    "Data/Pictures/staffi_terrier.jpg",
-
-
-
-
-    "Data/Pictures/torpe_schnauzer.jpeg",
-    "Data/Pictures/tibeti_terrier.jpg",
-    "Data/Pictures/tacsko.jpg",
-    "Data/Pictures/torpe_pincher.jpg",
-    "Data/Pictures/torpespicc.jpg",
-    "Data/Pictures/ujfullandi.jpg",
-    "Data/Pictures/uszkar.jpg",
-    "Data/Pictures/vizsla.jpg",
-    "Data/Pictures/whippet.jpg"
 
 
 ];
 
-juhaszkutyak=[];
-juhaszkutyak.push(new DogBreed("Német Juhász","Data/Pictures/nemet_juhasz.jpg"));
-juhaszkutyak.push(new DogBreed("Ausztrál Juhász","Data/Pictures/ausztr_juhasz.jpg"));
-juhaszkutyak.push( new DogBreed("Skőt Juhász" , "Data/Pictures/skot_juhasz.jpg"));
-juhaszkutyak.push(new DogBreed())
 
-dogBreeds = [];
-if (dog_name.length == dog_path.length) {
+
+
+var dog_path = [
+    ["Data/Pictures/whippet.jpg",
+        "Data/Pictures/torpespicc.jpg",
+        "Data/Pictures/torpe_pincher.jpg",
+        "Data/Pictures/tacsko.jpg",
+        "Data/Pictures/tibeti_terrier.jpg",
+        "Data/Pictures/torpe_schnauzer.jpeg",
+        "Data/Pictures/pekingi_palotakutya.jpg",
+        "Data/Pictures/orosz_fek_terrier.jpg",
+        "Data/Pictures/olasz_kopo.jpg",
+        "Data/Pictures/uszkar.jpg",
+        "Data/Pictures/spaniel.jpg",
+        "Data/Pictures/skot_terrier.jpg",
+        "Data/Pictures/skot_juhasz.jpg",
+        "Data/Pictures/shar_pei.jpg",
+        "Data/Pictures/si_cu.jpeg",
+        "Data/Pictures/nemet_spicc.jpg",
+        "Data/Pictures/maltai_selyem.jpg",
+        "Data/Pictures/kinai_kopasz.jpg",
+        "Data/Pictures/jack_russel.jpg",
+        "Data/Pictures/havannai_pincs.jpg",
+        "Data/Pictures/francia_bull.jpg",
+        "Data/Pictures/farao_ku.jpg",
+        "Data/Pictures/erdelyi_kopo.jpg",
+        "Data/Pictures/csivava.jpg",
+        "Data/Pictures/csau.jpg",
+        "Data/Pictures/ausztr_terrier.jpg",
+        "Data/Pictures/affenpincher.jpg"]
+
+
+
+
+
+            , [
+                "Data/Pictures/afghan_agar.jpg",
+                "Data/Pictures/angol_agar.jpg",
+                "Data/Pictures/ausztr_juhasz.jpg",
+                "Data/Pictures/belga_juhasz.jpg",
+                "Data/Pictures/border_collie.jpg",
+                "Data/Pictures/dalmata.jpg",
+                "Data/Pictures/eszkimo.jpg",
+                "Data/Pictures/golden_retr.jpg",
+                "Data/Pictures/ir_szetter.jpg",
+                "Data/Pictures/komondor.jpg",
+                "Data/Pictures/kuvasz.jpg",
+                "Data/Pictures/labrador.jpg",
+                "Data/Pictures/magyar_agar.jpg",
+                "Data/Pictures/mopsz.jpg",
+                "Data/Pictures/mudi.jpg",
+                "Data/Pictures/nemet_juhasz.jpg",
+                "Data/Pictures/nemet_vizsla.jpg",
+                "Data/Pictures/olasz_agar.jpg",
+                "Data/Pictures/puli.jpg",
+                "Data/Pictures/pumi.jpg",
+                "Data/Pictures/spanyol_kopo.jpg",
+                "Data/Pictures/vizsla.jpg"],
+
+    ["Data/Pictures/kar_medve_kutya.jpg", "Data/Pictures/karpati_juhasz.jpg", "Data/Pictures/husky.jpeg",
+
+        "Data/Pictures/gorlandi_kutya.jpg", "Data/Pictures/dobberman.jpg", "Data/Pictures/canne_corso.jpeg",
+        "Data/Pictures/bullmasztif.jpg", "Data/Pictures/boxer.jpeg", "Data/Pictures/bordoi_dog.jpg", "Data/Pictures/bernathegyi.png",
+        "Data/Pictures/berni_pasztor.jpg", "Data/Pictures/atlaszi_hegyikutya.jpg", "Data/Pictures/argentin_dog.jpeg",
+        "Data/Pictures/angol_bulldog.jpg", "Data/Pictures/amerikai_bulldog.jpg", "Data/Pictures/alaszkai_malam.jpg",
+        "Data/Pictures/akita_inu.jpeg", 'Data/Pictures/afr_oroszl_kutya.jpg', "Data/Pictures/abruzzo_juhasz.jpg",
+        "Data/Pictures/australskakelpie.jpg",
+
+        "Data/Pictures/napolyi_masztiff.png",
+        "Data/Pictures/nemet_dog.jpg",
+
+        "Data/Pictures/pireneusi_masztif.jpg",
+
+        "Data/Pictures/rottweiler.jpg",
+
+        "Data/Pictures/staffi_terrier.jpg",
+
+        "Data/Pictures/ujfullandi.jpg"
+
+    ]
+
+
+
+
+];
+
+let dog_breed_group0 = [];
+let dog_breed_group1 = [];
+let dog_breed_group2 = [];
+
+
+if (dog_name[0].length == dog_path[0].length) {
     for (i = 0; i < dog_name.length; i++) {
-        dogBreeds.push(new DogBreed(dog_name[i], dog_path[i]));
-       // $('body').append('<p>'+dogBreeds[i].name+'&nbsp;&nbsp;&nbsp;&nbsp;'+dogBreeds[i].path+'</p>');
+        dog_breed_group0.push(new DogBreed(dog_name[0][i], dog_path[0][i]));
     }
-  console.log(dogBreeds);
 } else {
-    alert("dog_name: " + dog_name.length+" dog_path: "+dog_path.length);
+    alert('group0: ' + dog_name[0].length + ' ' + dog_path[0].length);
 }
 
-function getDogBreeds() {
-return dogBreeds;
+if (dog_name[1].length == dog_path[1].length) {
+    for (i = 0; i < dog_name.length; i++) {
+        dog_breed_group1.push(new DogBreed(dog_name[1][i], dog_path[1][i]));
+    }
+} else {
+    alert('group1: ' + dog_name[1].length + ' ' + dog_path[1].length);
 }
 
-function getGameQuestions(){
+if (dog_name[2].length == dog_path[2].length) {
+    for (i = 0; i < dog_name.length; i++) {
+        dog_breed_group2.push(new DogBreed(dog_name[2][i], dog_path[2][i]));
+    }
+} else {
+    alert('group2: ' + dog_name[2].length + ' ' + dog_path[2].length);
+}
 
-    resultSet= new Set();
+
+function getGameQuestions() {
+
+
+        console.log('getGameQ');
+    resultSet = new Set();
 
     do {
+        group_rnd = parseInt(Math.random() * GROUP_COUNT);
+//        var rnd= parseInt(Math.random()*dogBreeds.length);
+//        resultSet.add(dogBreeds[rnd]);
+console.log('group_rnd: '+ group_rnd);
+        switch (group_rnd) {
+            case 0:
+                rnd = parseInt(Math.random() * dog_breed_group0.length);
+                resultSet.add(dog_breed_group0[rnd]);
+                break;
 
-        var rnd= parseInt(Math.random()*dogBreeds.length);
-        resultSet.add(dogBreeds[rnd]);
+            case 1:
+
+                rnd = parseInt(Math.random() * dog_breed_group1.length);
+                resultSet.add(dog_breed_group1[rnd]);
+
+                break;
+            default:
+                rnd = parseInt(Math.random() * dog_breed_group2.length);
+                resultSet.add(dog_breed_group2[rnd]);
+                break;
+        }
 
 
-    }while (resultSet.size<QUESTION_NUMBER);
+    } while (resultSet.size < QUESTION_NUMBER);
 
-  return Array.from(resultSet);
+    return Array.from(resultSet);
 }
-function get_game_questions(dogBreedArrayForGame) {
-    let result=Array.from({length:QUESTION_NUMBER},()=> new Array(ANSWER_NUMBER));
+function get_quiz_questions(dogBreedArrayForGame) {
+   
+    let result = Array.from({length: QUESTION_NUMBER}, () => new Array(ANSWER_NUMBER));
 
-   let tmpSetList= new Set();
+    let tmpSetList = new Set();
 
-   for (i=0;i<QUESTION_NUMBER;i++){
-      //result[i][0]=(dogBreedArrayForGame[i].name);
-     tmpSetList.add(dogBreedArrayForGame[i].name);
-       do {
-           tmpSetList.add(dog_name[parseInt(Math.random()*dog_name.length)]);
-       }while (tmpSetList.size<ANSWER_NUMBER);
-     var  ind=0;
+    for (i = 0; i < QUESTION_NUMBER; i++) {
+        //result[i][0]=(dogBreedArrayForGame[i].name);
+        tmpSetList.add(dogBreedArrayForGame[i].name);
+        groupcount= getGroupcount(dogBreedArrayForGame[i]);
+        console.log('groupcount= '+groupcount);
+        do {
+            tmpSetList.add(dog_name[groupcount][parseInt(Math.random() * dog_name[groupcount].length)]);
+        } while (tmpSetList.size < ANSWER_NUMBER);
+        var ind = 0;
 
 
-        for (e of Array.from(tmpSetList)){
-            result[i][ind++]=e;
+        for (e of Array.from(tmpSetList)) {
+            result[i][ind++] = e;
+        }
 
-       }
-
-       tmpSetList.clear();
-   }
+        tmpSetList.clear();
+    }
 
 
     for (let resultElement of result) {
         resultElement.sort(function () {
 
-            return .5-Math.random();
-        })
+            return .5 - Math.random();
+        });
     }
-   return result;
+    return result;
 
+}
+function getGroupcount(DogBreedElement){
+   
+   if(dog_breed_group0.includes(DogBreedElement)) return 0 ;
+   if(dog_breed_group1.includes(DogBreedElement)) return 1 ;
+   if(dog_breed_group2.includes(DogBreedElement)) return 2 ;
 }
 

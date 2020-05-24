@@ -1,4 +1,4 @@
-var quizQuestions;
+var quiz_Answer;
 var answers;
 var nextPic;
 var rightAnswer;
@@ -7,9 +7,9 @@ initStart();
 function initStart(){
     nextPic=0;
     rightAnswer=0;
-    quizQuestions= getGameQuestions();
-    console.log(quizQuestions);
-    answers=get_game_questions(quizQuestions);
+    quiz_Answer= getGameQuestions();
+    console.log(quiz_Answer);
+    answers=get_quiz_questions(quiz_Answer);
     console.log(answers);
     loadDataToHtml();
 }
@@ -17,7 +17,7 @@ function loadDataToHtml(){
    showResult();
     $('label').css('color','black');
     $('input[name=answ]').prop('checked',false);
-    $('img').attr('src',quizQuestions[nextPic].path);
+    $('img').attr('src',quiz_Answer[nextPic].path);
     for (i=0;i<answers.length;i++){
         $('label[for='+i+']').html(answers[nextPic][i]);
         $('label[for='+i+']').prev().val(answers[nextPic][i]);
@@ -36,14 +36,14 @@ if (checkedTipp==undefined){
     return;
 }
     $('#tipp').prop('disabled',true);
-if(checkedTipp==quizQuestions[nextPic].name){
+if(checkedTipp==quiz_Answer[nextPic].name){
     console.log('helyes tipp');
     rightAnswer++;
 }
 
 var allLabels= document.getElementsByTagName('label');
     for (i=0;i<allLabels.length;i++){
-         if ( $(allLabels[i]).html()==quizQuestions[nextPic].name){
+         if ( $(allLabels[i]).html()==quiz_Answer[nextPic].name){
              $('#label'+i).css('color','green');
          } else {
              $('#label'+i).css('color','red');
