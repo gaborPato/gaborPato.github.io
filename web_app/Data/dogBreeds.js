@@ -69,7 +69,7 @@ let dog_name = [
     "Labrador Retriver",
 
     "Magyar Agár",
-    "Magyar vizsla",
+
     "Máltai selyemkutya",
     "Mopsz",
     "Mudi",
@@ -105,7 +105,7 @@ let dog_name = [
     "Spániel",
     "Spanyol kopó",
     "Staffordshire bullterrier",
-    "Szibériai Husky", 
+
 
     "Törpe schnauzer",
     "Tibeti terrier",
@@ -146,7 +146,7 @@ let dog_path = [
     "Data/Pictures/bernathegyi.png",
 
     "Data/Pictures/bordoi_dog.jpg",
-    "Data/Pictures/boxer.jpg",
+    "Data/Pictures/boxer.jpeg",
     "Data/Pictures/bullmasztif.jpg",
 
     "Data/Pictures/canne_corso.jpeg",
@@ -165,7 +165,7 @@ let dog_path = [
     "Data/Pictures/golden_retr.jpg",
     "Data/Pictures/gorlandi_kutya.jpg",
 
-    "Data/Pictures/havannai_pincs.png",
+    "Data/Pictures/havannai_pincs.jpg",
     "Data/Pictures/husky.jpeg",
 
     "Data/Pictures/ir_szetter.jpg",
@@ -181,7 +181,7 @@ let dog_path = [
     "Data/Pictures/labrador.jpg",
 
     "Data/Pictures/magyar_agar.jpg",
-    "Data/Pictures/magyar_vizsla.jpg",
+
     "Data/Pictures/maltai_selyem.jpg",
     "Data/Pictures/mopsz.jpg",
     "Data/Pictures/mudi.jpg",
@@ -191,9 +191,9 @@ let dog_path = [
     "Data/Pictures/nemet_juhasz.jpg",
     "Data/Pictures/nemet_spicc.jpg",
     "Data/Pictures/nemet_vizsla.jpg",
-
-    "Data/Pictures/olasz_agar.jpg",
     "Data/Pictures/olasz_kopo.jpg",
+    "Data/Pictures/olasz_agar.jpg",
+
     "Data/Pictures/orosz_fek_terrier.jpg",
 
     "Data/Pictures/pekingi_palotakutya.jpg",
@@ -211,7 +211,7 @@ let dog_path = [
     "Data/Pictures/spaniel.jpg",
     "Data/Pictures/spanyol_kopo.jpg",
     "Data/Pictures/staffi_terrier.jpg",
-    "Data/Pictures/sziberiai_husky.jpg",
+
 
 
 
@@ -222,11 +222,18 @@ let dog_path = [
     "Data/Pictures/torpespicc.jpg",
     "Data/Pictures/ujfullandi.jpg",
     "Data/Pictures/uszkar.jpg",
-    "Data/Pictures/vizsla.jpeg",
+    "Data/Pictures/vizsla.jpg",
     "Data/Pictures/whippet.jpg"
 
 
 ];
+
+juhaszkutyak=[];
+juhaszkutyak.push(new DogBreed("Német Juhász","Data/Pictures/nemet_juhasz.jpg"));
+juhaszkutyak.push(new DogBreed("Ausztrál Juhász","Data/Pictures/ausztr_juhasz.jpg"));
+juhaszkutyak.push( new DogBreed("Skőt Juhász" , "Data/Pictures/skot_juhasz.jpg"));
+juhaszkutyak.push(new DogBreed())
+
 dogBreeds = [];
 if (dog_name.length == dog_path.length) {
     for (i = 0; i < dog_name.length; i++) {
@@ -238,8 +245,8 @@ if (dog_name.length == dog_path.length) {
     alert("dog_name: " + dog_name.length+" dog_path: "+dog_path.length);
 }
 
-function getDogbreds(){
-    return dogBreeds;
+function getDogBreeds() {
+return dogBreeds;
 }
 
 function getGameQuestions(){
