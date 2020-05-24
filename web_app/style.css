@@ -1,0 +1,44 @@
+body{
+margin-top: 3px;
+
+
+}
+
+.img_label_div{
+    margin-top: 0;
+    margin-left:auto;
+    margin-right: auto;
+
+    width: 260px;
+
+}
+.button_div{
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.control_button{
+    width: 100%;
+    height: 40px;
+    background: #446f08;
+    color:white;
+    font-size: large;
+    margin-top: 13px;
+    border: #5f78bd solid 4px;
+    border-radius: 20px;
+}
+.new_game_button{
+    background: #6f2e2a;
+}
+label{
+    font-size: 23px;
+    font-family: 'Caveat', cursive;
+}
+#result_p{
+    font-size: large;
+    color: #6c1b56;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Press Start 2P', cursive;
+}
