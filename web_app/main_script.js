@@ -62,7 +62,7 @@ var allLabels= document.getElementsByTagName('label');
             showResult();
         }
 
-    },1700);
+    },700);
 
 });
 function newGameClick() {

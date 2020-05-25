@@ -1,7 +1,7 @@
 
 
-const QUESTION_NUMBER = 7;
-const ANSWER_NUMBER = 3;
+const QUESTION_NUMBER = 10;
+const ANSWER_NUMBER = 4;
 const GROUP_COUNT = 3;
 
 class DogBreed {
@@ -140,7 +140,7 @@ let dog_breed_group2 = [];
 
 
 if (dog_name[0].length == dog_path[0].length) {
-    for (i = 0; i < dog_name.length; i++) {
+    for (i = 0; i < dog_name[0].length; i++) {
         dog_breed_group0.push(new DogBreed(dog_name[0][i], dog_path[0][i]));
     }
 } else {
@@ -148,7 +148,7 @@ if (dog_name[0].length == dog_path[0].length) {
 }
 
 if (dog_name[1].length == dog_path[1].length) {
-    for (i = 0; i < dog_name.length; i++) {
+    for (i = 0; i < dog_name[1].length; i++) {
         dog_breed_group1.push(new DogBreed(dog_name[1][i], dog_path[1][i]));
     }
 } else {
@@ -156,7 +156,7 @@ if (dog_name[1].length == dog_path[1].length) {
 }
 
 if (dog_name[2].length == dog_path[2].length) {
-    for (i = 0; i < dog_name.length; i++) {
+    for (i = 0; i < dog_name[2].length; i++) {
         dog_breed_group2.push(new DogBreed(dog_name[2][i], dog_path[2][i]));
     }
 } else {
@@ -167,14 +167,17 @@ if (dog_name[2].length == dog_path[2].length) {
 function getGameQuestions() {
 
 
-        console.log('getGameQ');
+       
     resultSet = new Set();
+    console.log('new resultSet: ');
+    console.log(resultSet);
 
     do {
         group_rnd = parseInt(Math.random() * GROUP_COUNT);
 //        var rnd= parseInt(Math.random()*dogBreeds.length);
 //        resultSet.add(dogBreeds[rnd]);
-console.log('group_rnd: '+ group_rnd);
+console.log('group_rnd: ');
+console.log(group_rnd);
         switch (group_rnd) {
             case 0:
                 rnd = parseInt(Math.random() * dog_breed_group0.length);
@@ -196,6 +199,8 @@ console.log('group_rnd: '+ group_rnd);
 
     } while (resultSet.size < QUESTION_NUMBER);
 
+    console.log("ready result set:");
+    console.log(resultSet);
     return Array.from(resultSet);
 }
 function get_quiz_questions(dogBreedArrayForGame) {
