@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div>
+
+            <img src="https://exehf.com" width="260" height="210" /><br>
+            <p></p>
+            <button id="prevbutton" style="margin-right: 45px;">vissza</button>
+            <button id="nextbutton" style="margin-right: 45px;">elore</button>
+
+            <script src="jquery-3.5.1.slim.js"></script>
+            <script>
+
+                var newDogs = {
+                    nd_path: [
+                        "Data/NewDogs/angol_toy_spaniel.jpeg",
+                        "Data/NewDogs/barbet.jpg",
+                        "Data/NewDogs/beagle.jpg",
+                        "Data/NewDogs/bobtail.jpg",
+                        "Data/NewDogs/dingo.jpg",
+                        "Data/NewDogs/drotsz_foxterrier.jpg",
+                        "Data/NewDogs/ir_vizispaniel.jpg",
+                        "Data/NewDogs/pointer.jpg",
+                        "Data/NewDogs/skot_szarvasagar.jpg"
+                    ],
+                    nd_name: [
+
+                        "Angol Toy Spániel", "Barbet", "Beagle", "Bobtail", "Dingo", "Drótszőrű Foxterrier",
+                        "Ír vizispániel", "Pointer", "Skót Szarvasagár"
+
+                    ]
+                };
+
+
+                var ind = 0;
+                $('img').attr('src', newDogs.nd_path[ind]);
+                $('p').html(newDogs.nd_name[ind]);
+
+                $('#prevbutton').click(function () {
+                    if (ind > 0) {
+                        ind--;
+                        $('img').attr('src', newDogs.nd_path[ind]);
+                        $('p').html(newDogs.nd_name[ind]);
+                    }
+                });
+
+                $('#nextbutton').click(function () {
+                    if (ind < newDogs.nd_name.length - 1) {
+                        ind++;
+                        $('img').attr('src', newDogs.nd_path[ind]);
+                        $('p').html(newDogs.nd_name[ind]);
+                    }
+                });
+
+
+            </script>
+
+        </div>
+    </body>
+
+</html>
