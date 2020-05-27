@@ -77,6 +77,7 @@ function showResult() {
     resultCommand='Eredmény: '+nextPic+'/'+rightAnswer;
     $('#result_p').html(resultCommand);
 }
+ 
 
 
 
