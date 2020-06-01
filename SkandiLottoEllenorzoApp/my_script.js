@@ -46,6 +46,7 @@ for(i=0; i<szelveny_divLength; i++){
 szelveny[i]=[];
     for ( j = 0; j <7; j++) {
       inputvalue=$('input[name=num'+i+'_'+j+']').val();
+      if(inputvalue=="") continue;
       inputvalue=parseInt(inputvalue);
 
       szelveny[i][j]=inputvalue;
@@ -62,6 +63,7 @@ winNumbers=[];
         winNumbers[i]=[];
         for ( j = 0; j <7; j++) {
             inputvalue=$('input[name=nyer_num'+i+'_'+j+']').val();
+            if (inputvalue=="") continue;
             inputvalue=parseInt(inputvalue);
 
             winNumbers[i][j]=inputvalue;
@@ -78,15 +80,16 @@ winNumbers=[];
 
 function showCalculation(szelveny,nyeroszamok) {
    resultMap= talalat(szelveny.szelveny,nyeroszamok.nyeroszamok);
+ $('p').remove();
    $('.result_section').css('background','#e8685d');
-   $('.result_section').append('<p id="info_p">A szelvény nem nyert. </p>')
+   $('.result_section').append('<p class="info_p">A szelvény nem nyert. </p>')
 
    for(i=4;i<8;i++){
        if (resultMap.get(i)>0){
 
            $('.result_section').css('background','#88fc77');
-           $('#info_p').html('Nyerő Szelvény');
-           html_command='<p id="talalatok_p">'+i+' találatos: '+resultMap.get(i)+' darab</p>';
+           $('.info_p').html('Nyerő Szelvény');
+           html_command='<p class="talalatok_p">'+i+' találatos: '+resultMap.get(i)+' darab</p>';
            $('.result_section').append(html_command);
 
        }
