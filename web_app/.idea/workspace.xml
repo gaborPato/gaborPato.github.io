@@ -16,6 +16,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/mnt/m2sataDrive/ProgramProjects/WebApplications/SkandiLottoEllenörző" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -28,10 +29,17 @@
       <option name="presentableId" value="Default" />
       <updated>1590415041147</updated>
       <workItem from="1590415050011" duration="656000" />
+      <workItem from="1590841211001" duration="75000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="149" width="426" height="485" key="FileChooserDialogImpl" timestamp="1590841283925">
+      <screen x="0" y="0" width="1408" height="778" />
+    </state>
+    <state x="487" y="149" width="426" height="485" key="FileChooserDialogImpl/0.0.1408.778@0.0.1408.778" timestamp="1590841283925" />
   </component>
 </project>

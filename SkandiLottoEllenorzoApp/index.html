@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Skandi Ell</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div id="main_container">
+<h2>Saját szelvény:</h2>
+<main id="main">
+
+    <div class="szelveny line0" id="_addeddiv0">
+        <input type="number" name="num0_0" min="1" max="35" >
+        <input type="number" name="num0_1" min="1" max="35">
+        <input type="number" name="num0_2" min="1" max="35">
+        <input type="number" name="num0_3" min="1" max="35">
+        <input type="number" name="num0_4" min="1" max="35">
+        <input type="number" name="num0_5" min="1" max="35">
+        <input type="number" name="num0_6" min="1" max="35">
+
+
+    </div>
+
+</main>
+<button class="add_button" onclick="addnewline()">következő</button>
+<section class="nyeroszamok">
+    <h2>Nyerőszámok:</h2>
+    <div class="nyeroszam line0" id="nyer0">
+        <input type="number" name="nyer_num0_0" min="1" max="35">
+        <input type="number" name="nyer_num0_1" min="1" max="35">
+        <input type="number" name="nyer_num0_2" min="1" max="35">
+        <input type="number" name="nyer_num0_3" min="1" max="35">
+        <input type="number" name="nyer_num0_4" min="1" max="35">
+        <input type="number" name="nyer_num0_5" min="1" max="35">
+        <input type="number" name="nyer_num0_6" min="1" max="35">
+
+
+    </div>
+    <div class="nyeroszam line1" id="nyer1">
+        <input type="number" name="nyer_num1_0" min="1" max="35">
+        <input type="number" name="nyer_num1_1" min="1" max="35">
+        <input type="number" name="nyer_num1_2" min="1" max="35">
+        <input type="number" name="nyer_num1_3" min="1" max="35">
+        <input type="number" name="nyer_num1_4" min="1" max="35">
+        <input type="number" name="nyer_num1_5" min="1" max="35">
+        <input type="number" name="nyer_num1_6" min="1" max="35">
+
+    </div>
+
+</section>
+
+<button id="result_button">Értékelés</button>
+
+<section class="result_section" style="width: 300px;height: 150px;border: 2px solid black">
+
+
+</section>
+</div>
+
+<!--SCRIPTS: -->
+<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+<script src="controler/talalat_ell.js"></script>
+<script src="controler/js_classes.js"></script>
+
+<script src="my_script.js"></script>
+</body>
+
+</html>
