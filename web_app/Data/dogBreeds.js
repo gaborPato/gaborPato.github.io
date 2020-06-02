@@ -23,7 +23,12 @@ var dog_name = [
         "Skót Juhász", "Shar-Pei", "Si-cu", "Német Spicc", "Máltai Selyemkutya",
         "Kínai Kopaszkutya", "Jack Russel Terrier", "Havannai Pincher", "Francia Bulldog", "Fáraókutya",
         "Erdélyi Kopó", "Csivava", "Csau-csau", "Auszrtál Terrier", "Affenpincher", "Beagle", "Drótszőrű Foxterrier",
-        "Brüsszeli Griffon", "Kis Oroszlánkutya"],
+        "Brüsszeli Griffon", "Kis Oroszlánkutya",
+        'Ausztrál selyemszőrű terrier',
+        'Ausztrál Terrier',
+        "Basenji",
+        'Basset Hound', 'Biewer Terrirer', 'Cairn Terrier',
+        'Tököli Kóbór Terrier'],
 
     //group2:
     [
@@ -31,7 +36,7 @@ var dog_name = [
         'Dalmata', 'Eszkimókutya', 'Golden Retriver', 'Ír szetter', 'Komondor', 'Kuvasz',
         'Labrador', 'Magyar Agár', 'Mopsz', 'Mudi', 'Német Juhász', 'Német Vizsla', 'Olasz Agár', 'Puli'
                 , 'Pumi', 'Spanyol Kopó', 'Magyar Vizsla', "Barbet", "Dingo",
-        "Ír vizispániel", "Pointer", "Skót Szarvasagár"
+        "Ír vizispániel", "Pointer", "Skót Szarvasagár","Portugál Vizikutya"
 
 
 
@@ -42,7 +47,7 @@ var dog_name = [
                 , 'Bullmasztif', 'Boxer', 'Bordeauxi Dog', 'Bernáthegyi', 'Berni Pásztor', 'Atlaszi Hegyikutya'
                 , "Argentín Dog", 'Angol Bulldog', 'Amerikai Bulldog', 'Alaszkai Malamut', 'Akita Inu', 'Afrikai Oroszlánkutya',
         'Abbrúzoi Juhász', 'Ausztrál Kelpie', 'Nápolyi Massztif', 'Német Dog', 'Pireneusi Masztiff', "Rottweiler",
-        'Staffordshire Terrier', 'Újfullandi',"Bobtail", "Amerikai Akita" ]
+        'Staffordshire Terrier', 'Újfullandi', "Bobtail", "Amerikai Akita","Denevér fülű pitnyúl","Mini Bullterrier"]
 
 
 
@@ -84,6 +89,14 @@ var dog_path = [
         "Data/Pictures/affenpincher.jpg", "Data/NewDogs/beagle.jpg",
         "Data/NewDogs/drotsz_foxterrier.jpg", "Data/NewDogs/brusseeli_griffon.jpg",
         "https://img.point.pet/44554800/544544544/444545875_106.jpg",
+
+        "https://lh3.googleusercontent.com/proxy/Sk3Z0kPcuZigJevkf1MJBMGyNhJJvPhunOLeLJK2IeHDUmz1dXDa8MHeGEkfoM7ivvXChFg0UCKjCMNOU-pxQ8SQ7m9b2NN7p3mw14C2GTSk9EHnFUAs1-7Z5enTQnvt-_8V1chJ5ehCGoZ11b1fhg",
+        "https://img-01.cdn.amarqt.com/kutya/hd/ausztral-terrier-1.jpg",
+        'Data/Pictures/basenji.jpg',
+        'https://img-04.cdn.amarqt.com/magazine/fajtak/hd/basset-hound-fajtastandard-1.jpg',
+        'https://cdn3-www.dogtime.com/assets/uploads/2019/08/biewer-terrier-dog-breed-pictures-cover.jpg',
+        'https://lh3.googleusercontent.com/proxy/8Z5MCYbj5f2spk0jH4GonWPaOuUp2h2t5zWoZEEUuI3THVkaqNN-KljceW7m5Uatvx46PJ2rF9Ltbsy9iy3Px8dxB0JFxNJ2qzTesq5qSCmgku51ZCs4XOPGvao',
+        'Data/Pictures/muki.jpg'
     ]
 
 
@@ -112,13 +125,13 @@ var dog_path = [
                 "Data/Pictures/puli.jpg",
                 "Data/Pictures/pumi.jpg",
                 "Data/Pictures/spanyol_kopo.jpg",
-                "Data/Pictures/m_vizsla.jpg", 
+                "Data/Pictures/m_vizsla.jpg",
                 "Data/NewDogs/barbet.jpg",
                 "Data/NewDogs/dingo.jpg",
                 "Data/NewDogs/ir_vizispaniel.jpg",
                 "Data/NewDogs/pointer.jpg",
-                "Data/NewDogs/skot_szarvasagar.jpg"
-                         ],
+                "Data/NewDogs/skot_szarvasagar.jpg",
+                 "https://kutyafajtak.hu/kepek/portugal-vizikutya/portugal-vizikutya-04.jpg"            ],
 
     //group3 data:
 
@@ -138,11 +151,13 @@ var dog_path = [
 
         "Data/Pictures/rottweiler.jpg",
 
-        "Data/Pictures/lusy.jpg",
+        "Data/Pictures/staffi_terrier.jpg",
 
         "Data/Pictures/ujfullandi.jpg",
         "Data/NewDogs/bobtail.jpg",
-        "https://www.pet4you.hu/img/big/amerikai_akita3.jpg"
+        "https://www.pet4you.hu/img/big/amerikai_akita3.jpg",
+       'Data/Pictures/lusy.jpg',
+       'https://www.kutya-tar.hu/kutyak1/miniatur-bullterrier/miniatur-bullterrier.jpg'
     ]
 
 
@@ -185,8 +200,7 @@ function getGameQuestions() {
 
 
     resultSet = new Set();
-    console.log('new resultSet: ');
-    console.log(resultSet);
+
 
     do {
         group_rnd = parseInt(Math.random() * GROUP_COUNT);
