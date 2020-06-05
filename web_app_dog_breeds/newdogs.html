@@ -13,9 +13,17 @@ and open the template in the editor.
     </head>
 
     <body>
-        <div>
 
-            <img src="https://exehf.com" width="260" height="210" /><br>
+
+            <div style=" width: 260px;
+                                height: 210px; ">
+
+
+                <img src="https://exehf.com" style="width: 260px;
+                                                                          max-height: 210px;  ">
+
+            </div>
+
             <p></p>
             <button id="prevbutton" style="margin-right: 45px;">vissza</button>
             <button id="nextbutton" style="margin-right: 45px;">elore</button>
@@ -164,7 +172,7 @@ and open the template in the editor.
                 });
 
                 $('#nextbutton').click(function () {
-                    if (ind < newDogs.nd_name.length - 1) {
+                    if (ind < newDogs.nd_name.length-1) {
                         ind++;
                         $('img').attr('src', newDogs.nd_path[ind]);
                         $('p').html(newDogs.nd_name[ind]);
@@ -174,7 +182,7 @@ and open the template in the editor.
 
             </script>
 
-        </div>
+
     </body>
 
 </html>

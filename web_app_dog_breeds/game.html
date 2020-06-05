@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
 
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css"/>
-	<title>game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>game</title>
 </head>
 <body>
 <div class="img_label_div">
-	<img src="https://example.com" width="260" height="200"/>
-	<br/>
-	<input type="radio" id="0" name="answ" >
-	<label for="0" id="label0">0</label><br>
-	<input type="radio" id="1" name="answ" >
-	<label for="1" id="label1">1</label><br>
-	<input type="radio" id="2" name="answ" >
-	<label for="2" id="label2" >2</label><br>
-	<input type="radio" id="3" name="answ" >
-	<label for="3" id="label3" >2</label>
+    <div style="
+                 width: 260px;
+                 height: 205px;
+                 display: block;">
 
+
+        <img src="https://example.com"
+             style="
+                     width: 260px;
+                     max-height: 205px; "/>
+
+    </div>
+    <input type="radio" id="0" name="answ">
+    <label for="0" id="label0">0</label><br>
+    <input type="radio" id="1" name="answ">
+    <label for="1" id="label1">1</label><br>
+    <input type="radio" id="2" name="answ">
+    <label for="2" id="label2">2</label><br>
+    <input type="radio" id="3" name="answ">
+    <label for="3" id="label3">3</label>
 
 
 </div>
 
 <div class="button_div">
-	<button id="tipp" class="control_button tipp">TIPP</button>
-	<p id="result_p">Eredmény: 0/0</p>
+    <button id="tipp" class="control_button tipp">TIPP</button>
+    <p id="result_p">Eredmény: 0/0</p>
 </div>
 
 
 <!--scripts-->
 <script src="jquery-3.5.1.slim.js"></script>
-<script  src="Data/dogBreeds.js"></script>
+<script src="Data/DogBreedsClasses.js"></script>
 
 <script src="main_script.js"></script>
-
-
 
 
 </body>

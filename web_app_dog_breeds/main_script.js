@@ -1,26 +1,33 @@
 var quiz_Answer;
 var answers;
-var nextPic;
+var q_counter;
 var rightAnswer;
+const breedClassIndex=0;
+const changableAnswerArrayIndex=1;
 
 initStart();
 function initStart(){
-    nextPic=0;
+    q_counter=0;
     rightAnswer=0;
-    quiz_Answer= getGameQuestions();
+    quiz_Answer= finalQuizQuestionArray();
+    answers=[];
+    for (let i = 0; i <quiz_Answer.length ; i++) {
+        answers[i]=quiz_Answer[i][changableAnswerArrayIndex];
+    }
     console.log(quiz_Answer);
-    answers=get_quiz_questions(quiz_Answer);
     console.log(answers);
+
+
     loadDataToHtml();
 }
 function loadDataToHtml(){
    showResult();
     $('label').css('color','black');
     $('input[name=answ]').prop('checked',false);
-    $('img').attr('src',quiz_Answer[nextPic].path);
+    $('img').attr('src',quiz_Answer[q_counter][breedClassIndex]._dogPicURL);
     for (i=0;i<answers.length;i++){
-        $('label[for='+i+']').html(answers[nextPic][i]);
-        $('label[for='+i+']').prev().val(answers[nextPic][i]);
+        $('label[for='+i+']').html(answers[q_counter][i]);
+        $('label[for='+i+']').prev().val(answers[q_counter][i]);
     }
 }
 
@@ -36,14 +43,14 @@ if (checkedTipp==undefined){
     return;
 }
     $('#tipp').prop('disabled',true);
-if(checkedTipp==quiz_Answer[nextPic].name){
+if(checkedTipp==quiz_Answer[q_counter][breedClassIndex]._breedName){
     console.log('helyes tipp');
     rightAnswer++;
 }
 
 var allLabels= document.getElementsByTagName('label');
     for (i=0;i<allLabels.length;i++){
-         if ( $(allLabels[i]).html()==quiz_Answer[nextPic].name){
+         if ( $(allLabels[i]).html()==quiz_Answer[q_counter][breedClassIndex]._breedName){
              $('#label'+i).css('color','green');
          } else {
              $('#label'+i).css('color','red');
@@ -51,11 +58,11 @@ var allLabels= document.getElementsByTagName('label');
     }
     setTimeout(()=>{
         $('#tipp').prop('disabled',false);
-        nextPic++;
-        if (nextPic<QUESTION_NUMBER){
+        q_counter++;
+        if (q_counter<QUESTION_QUIZ_NUMBER){
 
             loadDataToHtml()
-        }else if (nextPic==QUESTION_NUMBER) {
+        }else if (q_counter==QUESTION_QUIZ_NUMBER) {
             let command='<button id="new_game" class="control_button new_game_button" onclick="newGameClick()">Új játék</button>';
             $('.button_div').append(command);
             $('#tipp').prop('disabled',true);
@@ -74,7 +81,7 @@ function newGameClick() {
 
 }
 function showResult() {
-    resultCommand='Eredmény: '+nextPic+'/'+rightAnswer;
+    resultCommand='Eredmény: '+q_counter+'/'+rightAnswer;
     $('#result_p').html(resultCommand);
 }
  
