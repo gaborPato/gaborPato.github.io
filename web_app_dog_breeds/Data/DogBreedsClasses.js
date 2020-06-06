@@ -16,6 +16,12 @@ class PuliGroup extends DogBreedsClasses {
         this.id="group_puli";
     }
 }
+class Vizsla_Kopo_SpanielGroup extends DogBreedsClasses {
+    constructor(breedName, dogPicURL) {
+        super(breedName, dogPicURL);
+        this.id="group_vizsla_kopo_span";
+    }
+}
 
 class NemetJuhaszGroup extends DogBreedsClasses {
     constructor(breedName, dogPicURL) {
@@ -76,7 +82,7 @@ all_dogList = [
     new PuliGroup('Portugál Hegyikutya','https://www.akutya.hu/fajtakepek/eredeti/110portugal%20hegyikutya.jpg'),
     new PuliGroup('Barbet','https://img-05.cdn.amarqt.com/kutya/hd/francia-vizikutya-1.jpg'),
     new PuliGroup('Komondor','Data/Pictures/komondor.jpg'),
-    new PuliGroup('Kuvasz','Data/Pictures/komondor.jpg'),
+    new PuliGroup('Kuvasz','Data/Pictures/kuvasz.jpg'),
     new PuliGroup('Ír szetter','Data/Pictures/ir_szetter.jpg'),
     new PuliGroup('Csau-csau','Data/Pictures/csau.jpg'),
     new PuliGroup('Shar-Pei',"Data/Pictures/shar_pei.jpg"),
@@ -90,7 +96,7 @@ all_dogList = [
     new AgarGroup('Olasz Agár','https://www.kutya-tar.hu/kutyak2/olasz-agar/olasz-agar.jpg'),
     new AgarGroup('Orosz Fekete Terrier','https://www.kutya-tar.hu/kutyak2/orosz-fekete-terrier/orosz-fekete-terrier.jpg'),
     new NemetJuhaszGroup('Ónémetjuhász-kutya','https://i.ytimg.com/vi/jpb3gVfcz8I/hqdefault.jpg'),
-
+   new Vizsla_Kopo_SpanielGroup('Angol Coocker Spaniel','Data/Pictures/ang_cock_spaniel.jpg')
 
 
 
