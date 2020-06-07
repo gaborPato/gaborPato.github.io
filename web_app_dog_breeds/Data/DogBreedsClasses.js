@@ -44,18 +44,24 @@ class AgarGroup extends DogBreedsClasses {
         this.id='group_agar';
     }
 }
+class HarciKutyaGroup extends DogBreedsClasses {
+    constructor(breedName, dogPicURL) {
+        super(breedName, dogPicURL);
+        this.id='group_harci_kutya';
+    }
+}
 
-all_dogList = [
+var all_dogList = [
     new NemetJuhaszGroup('Német Juhász', 'Data/Pictures/nemet_juhasz.jpg'),
-    new NemetJuhaszGroup('Német Vizsla', "Data/Pictures/nemet_vizsla.jpg"),
-    new NemetJuhaszGroup('Dingó', "Data/Pictures/dingo.jpg"),
-    new NemetJuhaszGroup('Pointer', "Data/Pictures/pointer.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Német Vizsla', "Data/Pictures/nemet_vizsla.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Dingó', "Data/Pictures/dingo.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Pointer', "Data/Pictures/pointer.jpg"),
     new NemetJuhaszGroup('Border Collie', "Data/Pictures/border_collie.jpg"),
     new NemetJuhaszGroup('Belga Juhász', "Data/Pictures/belga_juhasz.jpg"),
     new PuliGroup('Mudi', "Data/Pictures/mudi.jpg"),
     new PuliGroup('Barbet', "Data/Pictures/barbet.jpg"),
     new PuliGroup('Pumi', "Data/Pictures/pumi.jpg"),
-    new PuliGroup('Ír Vizispániel', "Data/Pictures/ir_vizispaniel.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Ír Vizispániel', "Data/Pictures/ir_vizispaniel.jpg"),
     new AgarGroup("Skót Szarvasagár", "https://www.akutya.hu/fajtakepek/eredeti/321skot%20szarvasagar.jpg"),
     new AgarGroup("Whippet", "Data/Pictures/whippet.jpg"),
     new AgarGroup("Magyar Agár", "Data/Pictures/magyar_agar.jpg"),
@@ -71,36 +77,63 @@ all_dogList = [
     new NemetJuhaszGroup('Atlaszi Hegyikutya','Data/Pictures/atlaszi_hegyikutya.jpg'),
     new NemetJuhaszGroup('Alaszkai Malamut','Data/Pictures/alaszkai_malam.jpg'),
     new NemetJuhaszGroup('Akita Inu','Data/Pictures/akita_inu.jpeg'),
-    new NemetJuhaszGroup('Afrikai Oroszlánkutya','https://img-02.cdn.amarqt.com/kutya/lightbox/rhodesian-ridgeback-1.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Afrikai Oroszlánkutya','https://img-02.cdn.amarqt.com/kutya/lightbox/rhodesian-ridgeback-1.jpg'),
     new PuliGroup('Abbrúzói Juhász','https://img-02.cdn.amarqt.com/kutya/hd/cane-de-pastore-maremmano-abruzzese.jpg'),
     new NemetJuhaszGroup('Amerikai Akita','https://www.zooplus.hu/magazin/wp-content/uploads/2018/03/american-akita-welpe-1024x731.jpg'),
-    new NemetJuhaszGroup('Olasz Kopó','Data/Pictures/olasz_kopo.jpg'),
-    new NemetJuhaszGroup('Erdélyi Kopó','Data/Pictures/erdelyi_kopo.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Olasz Kopó','Data/Pictures/olasz_kopo.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Erdélyi Kopó','Data/Pictures/erdelyi_kopo.jpg'),
     new PuliGroup('Bobtail','https://upload.wikimedia.org/wikipedia/commons/9/91/Bobtail_als_Integrationshund.JPG'),
-    new PuliGroup('Ausztrál Kilpie','Data/Pictures/australskakelpie.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Ausztrál Kilpie','Data/Pictures/australskakelpie.jpg'),
     new PuliGroup('Ausztrál Terrier','https://img-03.cdn.amarqt.com/animals/kutya/ausztral-terrier/lightbox/1-untitled-5257d197-8afd-4484-9e37-7511a8743590-1.jpg'),
     new PuliGroup('Portugál Hegyikutya','https://www.akutya.hu/fajtakepek/eredeti/110portugal%20hegyikutya.jpg'),
     new PuliGroup('Barbet','https://img-05.cdn.amarqt.com/kutya/hd/francia-vizikutya-1.jpg'),
     new PuliGroup('Komondor','Data/Pictures/komondor.jpg'),
     new PuliGroup('Kuvasz','Data/Pictures/kuvasz.jpg'),
-    new PuliGroup('Ír szetter','Data/Pictures/ir_szetter.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Ír szetter','Data/Pictures/ir_szetter.jpg'),
     new PuliGroup('Csau-csau','Data/Pictures/csau.jpg'),
     new PuliGroup('Shar-Pei',"Data/Pictures/shar_pei.jpg"),
     new PuliGroup('Beagle',"Data/Pictures/beagle.jpg"),
     new PuliGroup('Basset Huond',"https://img-05.cdn.amarqt.com/animals/kutya/basset-hound/detailed/1-untitled-31e6b6d2-a014-447b-9364-048b5681656a-1.jpg"),
-    new PuliGroup('Portugál Vizikutya',"https://kutyafajtak.hu/kepek/portugal-vizikutya/portugal-vizikutya-04.jpg"),
-    new PuliGroup('Spanyol Kopó','Data/Pictures/spanyol_kopo.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Portugál Vizikutya',"https://kutyafajtak.hu/kepek/portugal-vizikutya/portugal-vizikutya-04.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Spanyol Kopó','Data/Pictures/spanyol_kopo.jpg'),
     new AgarGroup('Afgán Agár','Data/Pictures/afghan_agar.jpg'),
     new AgarGroup('Fáraó Kutya',"Data/Pictures/farao_ku.jpg"),
     new AgarGroup('Angol Agár',"Data/Pictures/angol_agar.jpg"),
     new AgarGroup('Olasz Agár','https://www.kutya-tar.hu/kutyak2/olasz-agar/olasz-agar.jpg'),
     new AgarGroup('Orosz Fekete Terrier','https://www.kutya-tar.hu/kutyak2/orosz-fekete-terrier/orosz-fekete-terrier.jpg'),
     new NemetJuhaszGroup('Ónémetjuhász-kutya','https://i.ytimg.com/vi/jpb3gVfcz8I/hqdefault.jpg'),
-   new Vizsla_Kopo_SpanielGroup('Angol Coocker Spaniel','Data/Pictures/ang_cock_spaniel.jpg')
-
+   new Vizsla_Kopo_SpanielGroup('Angol Coocker Spaniel','Data/Pictures/ang_cock_spaniel.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Field Spániel','https://img-03.cdn.amarqt.com/kutya/hd/field-spaniel-2.jpg'),
+    new MukiKutyaGroup('Mopsz','/home/gabor/mnt/Pictures/mopsz.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Angol Toy Spaniel','https://img.point.pet/44554800/544544544/555444866_1.jpg'),
+    new MukiKutyaGroup('Tököli Kobor Terrier','Data/Pictures/muki.jpg'),
+    new MukiKutyaGroup('Törpe pincser','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/Zwergpinscher-im-Grass-1024x682.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Rövidszőrű Tacskó','https://upload.wikimedia.org/wikipedia/commons/a/a1/Standard-Dachshund.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Szálkásszőrű Tacskó','https://img-05.cdn.amarqt.com/kutya/hd/szalkasszoru-torpe-tacsko-2.jpg'),
+    new MukiKutyaGroup('Tibeti Terrier','Data/Pictures/tibeti_terrier.jpg'),
+    new MukiKutyaGroup('Törpe Spicc','Data/Pictures/torpespicc.jpg'),
+    new MukiKutyaGroup('Pekingi Palotakutya','Data/Pictures/pekingi_palotakutya.jpg'),
+   
+    new MukiKutyaGroup('Skót terrier','Data/Pictures/skot_terrier.jpg'),
+    new MukiKutyaGroup('Si-cu','Data/Pictures/si_cu.jpeg'),
+    new MukiKutyaGroup('Német Spicc','Data/Pictures/nemet_spicc.jpg'),
+    new MukiKutyaGroup('Máltai Selyemkutya','Data/Pictures/maltai_selyem.jpg'),
+    new MukiKutyaGroup('Kínai kopaszkutya','Data/Pictures/kinai_kopasz.jpg'),
+    new MukiKutyaGroup('Jack Russel terrier','Data/Pictures/jack_russel.jpg'),
+    new MukiKutyaGroup('Biever terrier','https://img-03.cdn.amarqt.com/kutya/hd/biewer-yorkshire-terrier-1.jpg'),
+    new MukiKutyaGroup('Cairn terrier','https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Cairn-Terrier-2008.PNG/250px-Cairn-Terrier-2008.PNG'),
+    new MukiKutyaGroup('Kis oroszlánkutya','https://img-03.cdn.amarqt.com/animals/kutya/kis-oroszlankutya/lightbox/0-untitled-07327384-4abe-4395-acfc-f71b0ccdc17c-1.jpg'),
+    new MukiKutyaGroup('Ausztrál selyemszőrű terrier','https://www.kutya-tar.hu/kutyak2/ausztral-selyemszoru-terrier/ausztral-selyemszoru-terrier.jpg'),
+    new MukiKutyaGroup('Brüsszerli Giffon','Data/Pictures/brusseeli_griffon.jpg'),
+    new MukiKutyaGroup('Drótszörű foxterrier','https://www.haziallat.hu/kutyafajtak/a-drotszoru-foxterrier-orokmozgo-gyerekbarat-kutya/2704/1/foxterrier-foxi-kutya.jpg'),
+    new MukiKutyaGroup('Havannai pincser','Data/Pictures/havannai_pincs.jpg'),
+    new MukiKutyaGroup('Csivava','Data/Pictures/csivava.jpg'),
+    new MukiKutyaGroup('Ausztrál terrier','https://img-01.cdn.amarqt.com/kutya/hd/ausztral-terrier-1.jpg'),
+    new MukiKutyaGroup('Affenpincser','Data/Pictures/affenpincher.jpg'),
 
 
 ];
+ console.log(all_dogList.length);
  function getAllDogList() {
 
      return all_dogList;

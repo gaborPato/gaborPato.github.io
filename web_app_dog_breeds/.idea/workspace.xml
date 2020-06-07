@@ -36,6 +36,16 @@
       <recent name="$PROJECT_DIR$/Data/Pictures" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="DogBreedsClasses.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Data/DogBreedsClasses.js" working-dir="$PROJECT_DIR$/Data">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.DogBreedsClasses.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -50,11 +60,29 @@
       <workItem from="1591200687476" duration="706000" />
       <workItem from="1591383406122" duration="27000" />
       <workItem from="1591383726565" duration="3068000" />
-      <workItem from="1591464085245" duration="639000" />
+      <workItem from="1591464085245" duration="3734000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1304" height="189" key="GridCell.Tab.0.bottom" timestamp="1591469055174">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state width="1304" height="189" key="GridCell.Tab.0.bottom/0.768.1440.810/21.0.1366.768@0.768.1440.810" timestamp="1591469055174" />
+    <state width="1304" height="189" key="GridCell.Tab.0.center" timestamp="1591469055174">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state width="1304" height="189" key="GridCell.Tab.0.center/0.768.1440.810/21.0.1366.768@0.768.1440.810" timestamp="1591469055174" />
+    <state width="1304" height="189" key="GridCell.Tab.0.left" timestamp="1591469055174">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state width="1304" height="189" key="GridCell.Tab.0.left/0.768.1440.810/21.0.1366.768@0.768.1440.810" timestamp="1591469055174" />
+    <state width="1304" height="189" key="GridCell.Tab.0.right" timestamp="1591469055174">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state width="1304" height="189" key="GridCell.Tab.0.right/0.768.1440.810/21.0.1366.768@0.768.1440.810" timestamp="1591469055174" />
   </component>
 </project>
