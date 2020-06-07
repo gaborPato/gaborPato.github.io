@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>AllDogs</title>
-</head>
-<body>
-<div style=" width: 260px;
-                                height: 210px; ">
+    <head>
+        <meta charset="UTF-8">
+        <title>AllDogs</title>
+    </head>
+    <body>
+        <div style=" width: 260px;
+             height: 210px; ">
 
 
-    <img src="https://exehf.com" style="width: 260px;
-                                                                          max-height: 210px;  ">
+            <img src="https://exehf.com" style="width: 260px;
+                 max-height: 210px;  ">
 
-</div>
+        </div>
 
-<p class="name_p"></p>
-<p class="id_p"></p>
-<button id="prevbutton_all" style="margin-right: 45px;">vissza</button>
-<button id="nextbutton_all" style="margin-right: 45px;">elore</button>
+        <p class="name_p"></p>
+        <p class="id_p"></p>
+        <button id="prevbutton_all" style="margin-right: 45px;">vissza</button>
+        <button id="nextbutton_all" style="margin-right: 45px;">elore</button>
 
-<script src="jquery-3.5.1.slim.js"></script>
-<script src="Data/DogBreedsClasses.js"></script>
-<script type="text/javascript">
+        <script src="jquery-3.5.1.slim.js"></script>
+        <script src="Data/DogBreedsClasses.js"></script>
+        <script type="text/javascript">
 
-    list=getAllDogList();
+            list = getAllDogList();
 
 
-    var ind = 0;
-    $('img').attr('src', list[ind]._dogPicURL);
-    $('.name_p').html(list[ind]._breedName);
-    $('.id_p').html(list[ind].id);
-
-    $('#prevbutton_all').click(function () {
-        if (ind > 0) {
-            ind--;
+            var ind = 0;
             $('img').attr('src', list[ind]._dogPicURL);
             $('.name_p').html(list[ind]._breedName);
             $('.id_p').html(list[ind].id);
-        }
-    });
 
-    $('#nextbutton_all').click(function () {
-        if (ind < list.length-1) {
-            ind++;
-            $('img').attr('src', list[ind]._dogPicURL);
-            $('.name_p').html(list[ind]._breedName);
-            $('.id_p').html(list[ind].id);
-        }
-    });
+            $('#prevbutton_all').click(function () {
+                ind--;
+                if (ind < 0) {
+                    ind = list.length - 1;
+
+                    $('img').attr('src', list[ind]._dogPicURL);
+                    $('.name_p').html(list[ind]._breedName);
+                    $('.id_p').html(list[ind].id);
+                }
+            });
+
+            $('#nextbutton_all').click(function () {
+                ind++;
+                if (ind > list.length - 1) {
+
+
+                    ind=0;
+                    $('img').attr('src', list[ind]._dogPicURL);
+                    $('.name_p').html(list[ind]._breedName);
+                    $('.id_p').html(list[ind].id);
+                }
+            });
 
 
 
-</script>
-</body>
+        </script>
+    </body>
 </html>
