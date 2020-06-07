@@ -34,22 +34,26 @@
             $('#prevbutton_all').click(function () {
                 ind--;
                 if (ind < 0) {
-                    ind = list.length - 1;}
+                    ind = list.length - 1;
+                }
 
-                    $('img').attr('src', list[ind]._dogPicURL);
-                    $('.name_p').html(list[ind]._breedName);
-                    $('.id_p').html(list[ind].id);
-                
+                $('img').attr('src', list[ind]._dogPicURL);
+                $('.name_p').html(list[ind]._breedName);
+                $('.id_p').html(list[ind].id);
+
             });
 
             $('#nextbutton_all').click(function () {
                 ind++;
                 if (ind > list.length - 1) {
-                    ind=0;}
-                    $('img').attr('src', list[ind]._dogPicURL);
-                    $('.name_p').html(list[ind]._breedName);
-                    $('.id_p').html(list[ind].id);
-                
+
+
+                    ind = 0;
+                }
+                $('img').attr('src', list[ind]._dogPicURL);
+                $('.name_p').html(list[ind]._breedName);
+                $('.id_p').html(list[ind].id);
+
             });
 
 
