@@ -61,7 +61,7 @@
       <workItem from="1591383406122" duration="27000" />
       <workItem from="1591383726565" duration="3068000" />
       <workItem from="1591464085245" duration="3734000" />
-      <workItem from="1591507388165" duration="404000" />
+      <workItem from="1591507388165" duration="895000" />
     </task>
     <servers />
   </component>
@@ -129,17 +129,5 @@
       <screen x="0" y="0" width="1408" height="778" />
     </state>
     <state width="1386" height="236" key="GridCell.Tab.2.right/0.0.1408.778@0.0.1408.778" timestamp="1591507648102" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/all_dogs.html</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

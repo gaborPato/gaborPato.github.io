@@ -104,7 +104,7 @@ var all_dogList = [
     new NemetJuhaszGroup('Ónémetjuhász-kutya','https://i.ytimg.com/vi/jpb3gVfcz8I/hqdefault.jpg'),
    new Vizsla_Kopo_SpanielGroup('Angol Coocker Spaniel','Data/Pictures/ang_cock_spaniel.jpg'),
     new Vizsla_Kopo_SpanielGroup('Field Spániel','https://img-03.cdn.amarqt.com/kutya/hd/field-spaniel-2.jpg'),
-    new MukiKutyaGroup('Mopsz','/home/gabor/mnt/Pictures/mopsz.jpg'),
+    new MukiKutyaGroup('Mopsz','Data/Pictures/mopsz.jpg'),
     new Vizsla_Kopo_SpanielGroup('Angol Toy Spaniel','https://img.point.pet/44554800/544544544/555444866_1.jpg'),
     new MukiKutyaGroup('Tököli Kobor Terrier','Data/Pictures/muki.jpg'),
     new MukiKutyaGroup('Törpe pincser','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/Zwergpinscher-im-Grass-1024x682.jpg'),
