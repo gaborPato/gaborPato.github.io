@@ -82,7 +82,7 @@ function newGameClick() {
 }
 function showResult() {
     resultCommand='Eredmény: '+q_counter+'/'+rightAnswer;
-    $('#result_p').html(resultCommand);
+    $(`#result_p`).html(resultCommand);
 }
  
 

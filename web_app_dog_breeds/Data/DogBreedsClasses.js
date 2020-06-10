@@ -130,10 +130,27 @@ var all_dogList = [
     new MukiKutyaGroup('Csivava','Data/Pictures/csivava.jpg'),
     new MukiKutyaGroup('Ausztrál terrier','https://img-01.cdn.amarqt.com/kutya/hd/ausztral-terrier-1.jpg'),
     new MukiKutyaGroup('Affenpincser','Data/Pictures/affenpincher.jpg'),
+    new NemetJuhaszGroup('Pomázi Hordócska','Data/Pictures/tipike.jpg'),
+    new HarciKutyaGroup('Bernáthegyi','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/bernhardiner-im-schnee.jpg'),
+    new HarciKutyaGroup('Denevérfülű Pit-Nyúl','Data/Pictures/lusy.jpg'),
+    new HarciKutyaGroup('Amerikai Bulldog','Data/Pictures/amerikai_bulldog.jpg'),
+    new HarciKutyaGroup('Angol Bulldog','Data/Pictures/angol_bulldog.jpg'),
+    new HarciKutyaGroup('Argentín Dog','https://www.pet4you.hu/img/big/Dogo_Argentino_2.jpg'),
+    new HarciKutyaGroup('Bordauxi Dog','Data/Pictures/bordoi_dog.jpg'),
+    new HarciKutyaGroup('Boxer','Data/Pictures/boxer.jpeg'),
+    new HarciKutyaGroup('Bullmasztif','https://img-05.cdn.amarqt.com/animals/kutya/bullmasztiff/detailed/2-untitled-2892cbf5-b27b-4fc3-a8ec-8d83cdb74d5f-1.jpg'),
+    new HarciKutyaGroup('Canne corso','Data/Pictures/canne_corso.jpeg'),
+    new HarciKutyaGroup('Dobberman','Data/Pictures/dobberman.jpg'),
+    new HarciKutyaGroup('Nápolyi Masztif','https://www.kutya-tar.hu/kutyak1/napolyi-masztiff/napolyi-masztiff.jpg'),
+    new HarciKutyaGroup('Német Dog','Data/Pictures/nemet_dog.jpg'),
+    new HarciKutyaGroup('Pireneusi Masztiff','https://static-cdn.arcanum.hu/nfo-resources/kutyatar_pic/kutyatar/k%C3%A9pek/k273.bmp'),
+    new HarciKutyaGroup('Rottweiler','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/rottweiler-gl%C3%BCcklich-1024x682.jpg'),
+    new HarciKutyaGroup('Amerikai Stedfodshire Terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/amerikai-staffordshire-terrier-1.jpg'),
+    ];
 
 
-];
- console.log(all_dogList.length);
+
+    console.log(all_dogList.length);
  function getAllDogList() {
 
      return all_dogList;
