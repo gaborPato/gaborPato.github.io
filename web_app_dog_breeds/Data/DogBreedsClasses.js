@@ -84,7 +84,6 @@ var all_dogList = [
     new Vizsla_Kopo_SpanielGroup('Erdélyi Kopó','Data/Pictures/erdelyi_kopo.jpg'),
     new PuliGroup('Bobtail','https://upload.wikimedia.org/wikipedia/commons/9/91/Bobtail_als_Integrationshund.JPG'),
     new Vizsla_Kopo_SpanielGroup('Ausztrál Kilpie','Data/Pictures/australskakelpie.jpg'),
-    new PuliGroup('Ausztrál Terrier','https://img-03.cdn.amarqt.com/animals/kutya/ausztral-terrier/lightbox/1-untitled-5257d197-8afd-4484-9e37-7511a8743590-1.jpg'),
     new PuliGroup('Portugál Hegyikutya','https://www.akutya.hu/fajtakepek/eredeti/110portugal%20hegyikutya.jpg'),
     new PuliGroup('Barbet','https://img-05.cdn.amarqt.com/kutya/hd/francia-vizikutya-1.jpg'),
     new PuliGroup('Komondor','Data/Pictures/komondor.jpg'),
@@ -146,6 +145,8 @@ var all_dogList = [
     new HarciKutyaGroup('Pireneusi Masztiff','https://static-cdn.arcanum.hu/nfo-resources/kutyatar_pic/kutyatar/k%C3%A9pek/k273.bmp'),
     new HarciKutyaGroup('Rottweiler','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/rottweiler-gl%C3%BCcklich-1024x682.jpg'),
     new HarciKutyaGroup('Amerikai Stedfodshire Terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/amerikai-staffordshire-terrier-1.jpg'),
+   new MukiKutyaGroup('Ausztrál selyemszőrű terrier','https://www.kutya-tar.hu/kutyak2/ausztral-selyemszoru-terrier/ausztral-selyemszoru-terrier.jpg'),
+   new MukiKutyaGroup('Yorkshire terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/yorkshire-terrier-1.jpg')
     ];
 
 
