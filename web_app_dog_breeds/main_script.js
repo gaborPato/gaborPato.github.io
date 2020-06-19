@@ -5,6 +5,26 @@ var rightAnswer;
 const breedClassIndex=0;
 const changableAnswerArrayIndex=1;
 
+const dailyColor='rgb(221, 235, 228)';
+const nightColor='rgb(95, 99, 97)';
+const darkYellow='rgb(199, 196, 50)';
+const bca='background-color';
+
+
+$('body').css(bca,dailyColor);
+
+$('#actualy_pictures').click(function () {
+
+    if($('body').css(bca) == dailyColor){
+        $('body').css(bca,nightColor);
+        // $('label').css('color','yellow');
+    }else {
+        $('body').css(bca,dailyColor);
+
+    }
+    changeLabelColor();
+});
+
 initStart();
 function initStart(){
     q_counter=0;
@@ -22,12 +42,20 @@ function initStart(){
 }
 function loadDataToHtml(){
    showResult();
-    $('label').css('color','black');
+   changeLabelColor();
+   // $('label').css('color','black');
     $('input[name=answ]').prop('checked',false);
     $('img').attr('src',quiz_Answer[q_counter][breedClassIndex]._dogPicURL);
     for (i=0;i<answers.length;i++){
         $('label[for='+i+']').html(answers[q_counter][i]);
         $('label[for='+i+']').prev().val(answers[q_counter][i]);
+    }
+}
+
+function changeLabelColor(){
+    $('label').css('color','black');
+    if ($('body').css(bca)==nightColor){
+        $('label').css('color',darkYellow);
     }
 }
 
