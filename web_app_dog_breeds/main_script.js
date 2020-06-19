@@ -8,6 +8,8 @@ const changableAnswerArrayIndex=1;
 const dailyColor='rgb(221, 235, 228)';
 const nightColor='rgb(95, 99, 97)';
 const darkYellow='rgb(199, 196, 50)';
+var labelGreen;
+var labelRed;
 const bca='background-color';
 
 
@@ -54,8 +56,13 @@ function loadDataToHtml(){
 
 function changeLabelColor(){
     $('label').css('color','black');
+    labelGreen='green';
+    labelRed='red';
+
     if ($('body').css(bca)==nightColor){
         $('label').css('color',darkYellow);
+        labelGreen='#9beb8d';
+        labelRed='#e6757e';
     }
 }
 
@@ -79,9 +86,9 @@ if(checkedTipp==quiz_Answer[q_counter][breedClassIndex]._breedName){
 var allLabels= document.getElementsByTagName('label');
     for (i=0;i<allLabels.length;i++){
          if ( $(allLabels[i]).html()==quiz_Answer[q_counter][breedClassIndex]._breedName){
-             $('#label'+i).css('color','green');
+             $('#label'+i).css('color',labelGreen);
          } else {
-             $('#label'+i).css('color','red');
+             $('#label'+i).css('color',labelRed);
          }
     }
     setTimeout(()=>{
@@ -97,7 +104,7 @@ var allLabels= document.getElementsByTagName('label');
             showResult();
         }
 
-    },700);
+    },800);
 
 });
 function newGameClick() {
