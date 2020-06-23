@@ -85,6 +85,7 @@ var all_dogList = [
     new Vizsla_Kopo_SpanielGroup('Erdélyi Kopó','Data/Pictures/erdelyi_kopo.jpg'),
     new PuliGroup('Bobtail','https://upload.wikimedia.org/wikipedia/commons/9/91/Bobtail_als_Integrationshund.JPG'),
     new Vizsla_Kopo_SpanielGroup('Ausztrál Kilpie','Data/Pictures/australskakelpie.jpg'),
+
     new PuliGroup('Portugál Hegyikutya','https://www.akutya.hu/fajtakepek/eredeti/110portugal%20hegyikutya.jpg'),
     new PuliGroup('Barbet','https://img-05.cdn.amarqt.com/kutya/hd/francia-vizikutya-1.jpg'),
     new PuliGroup('Komondor','Data/Pictures/komondor.jpg'),
@@ -149,17 +150,40 @@ var all_dogList = [
     new HarciKutyaGroup('Rottweiler','https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/rottweiler-gl%C3%BCcklich-1024x682.jpg'),
     new HarciKutyaGroup('Amerikai Stedfodshire Terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/amerikai-staffordshire-terrier-1.jpg'),
    new MukiKutyaGroup('Ausztrál selyemszőrű terrier','https://www.kutya-tar.hu/kutyak2/ausztral-selyemszoru-terrier/ausztral-selyemszoru-terrier.jpg'),
-   new MukiKutyaGroup('Yorkshire terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/yorkshire-terrier-1.jpg')
-    ];
+   new MukiKutyaGroup('Yorkshire terrier','https://img-03.cdn.amarqt.com/kutya/lightbox/yorkshire-terrier-1.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Boykin Spániel','https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Boykin-Spaniel-1.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Orosz Spániel','https://c.pxhere.com/photos/28/0e/welsh_springer_spaniel_dog_pet_canine_nature_outside-1128944.jpg!s'),
+    new Vizsla_Kopo_SpanielGroup('Francia Spániel','https://www.kutya-tar.hu/kutyak2/francia-spaniel/francia-spaniel.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Pikárdiai Spániel','https://img-03.cdn.amarqt.com/kutya/hd/pikardiai-spaniel-1.jpg'),
+    new Vizsla_Kopo_SpanielGroup('Pikárdiai Kék Spániel','https://img-04.cdn.amarqt.com/kutya/hd/pikardiai-kek-spaniel-1.jpg')
+
+];
+function getAllDogList() {
+
+    return all_dogList;
+
+}
+ var newDogList=[
+     new Vizsla_Kopo_SpanielGroup('Boykin Spániel','https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Boykin-Spaniel-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Orosz Spániel','https://c.pxhere.com/photos/28/0e/welsh_springer_spaniel_dog_pet_canine_nature_outside-1128944.jpg!s'),
+     new Vizsla_Kopo_SpanielGroup('Francia Spániel','https://www.kutya-tar.hu/kutyak2/francia-spaniel/francia-spaniel.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Pikárdiai Spániel','https://img-03.cdn.amarqt.com/kutya/hd/pikardiai-spaniel-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Pikárdiai Kék Spániel','https://img-04.cdn.amarqt.com/kutya/hd/pikardiai-kek-spaniel-1.jpg'),
+
+     new Vizsla_Kopo_SpanielGroup('Billy','https://img-02.cdn.amarqt.com/kutya/hd/billy-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Finn Kopó','https://img-05.cdn.amarqt.com/animals/kutya/finn-kopo/lightbox/1-untitled-bb547953-6bac-4f22-a4fa-5f1457b85094-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Szlovák Kopó','https://img-05.cdn.amarqt.com/kutya/hd/szlovak-kopo-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Vidravadász Kopó','https://img-01.cdn.amarqt.com/kutya/hd/vidrakopo-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Szávavölgyi Kopó','https://img-05.cdn.amarqt.com/animals/kutya/szavavolgyi-kopo/lightbox/0-untitled-a4eb0516-c86f-400a-a131-9ee15427c67a-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Halden Kopó','https://img-02.cdn.amarqt.com/kutya/hd/halden-kopo-1.jpg'),
+ ];
+
+ function getNewDogList(){return newDogList}
 
 
 
     console.log(all_dogList.length);
- function getAllDogList() {
 
-     return all_dogList;
-
- }
 
 function getQuizQuestion() {
 

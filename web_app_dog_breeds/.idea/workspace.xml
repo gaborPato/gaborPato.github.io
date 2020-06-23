@@ -30,6 +30,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,6 +65,11 @@
       <workItem from="1591644885153" duration="782000" />
       <workItem from="1591741173009" duration="4659000" />
       <workItem from="1591879632519" duration="531000" />
+      <workItem from="1591886951282" duration="646000" />
+      <workItem from="1591986752604" duration="1639000" />
+      <workItem from="1592506344321" duration="5931000" />
+      <workItem from="1592916704929" duration="599000" />
+      <workItem from="1592938347782" duration="2675000" />
     </task>
     <servers />
   </component>
@@ -71,6 +77,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="573" y="947" width="426" height="485" key="FileChooserDialogImpl" timestamp="1592506690338">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state x="573" y="947" width="426" height="485" key="FileChooserDialogImpl/0.768.1440.810/0.0.1366.768@0.768.1440.810" timestamp="1592506690338" />
     <state width="1304" height="189" key="GridCell.Tab.0.bottom" timestamp="1591469055174">
       <screen x="0" y="768" width="1440" height="810" />
     </state>
@@ -87,5 +97,17 @@
       <screen x="0" y="768" width="1440" height="810" />
     </state>
     <state width="1304" height="189" key="GridCell.Tab.0.right/0.768.1440.810/21.0.1366.768@0.768.1440.810" timestamp="1591469055174" />
+    <state x="201" y="815" width="992" height="731" key="SettingsEditor" timestamp="1592506696964">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state x="201" y="815" width="992" height="731" key="SettingsEditor/0.768.1440.810/0.0.1366.768@0.768.1440.810" timestamp="1592506696964" />
+    <state x="491" y="1050" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1592506694157">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state x="491" y="1050" width="609" height="280" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.768.1440.810/0.0.1366.768@0.768.1440.810" timestamp="1592506694157" />
+    <state x="383" y="805" width="672" height="676" key="search.everywhere.popup" timestamp="1591987307962">
+      <screen x="0" y="768" width="1440" height="810" />
+    </state>
+    <state x="383" y="805" width="672" height="676" key="search.everywhere.popup/0.768.1440.810/17.0.1366.768@0.768.1440.810" timestamp="1591987307962" />
   </component>
 </project>

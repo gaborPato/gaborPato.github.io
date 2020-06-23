@@ -1,188 +1,63 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-
-    <head>
-        <title>New dogs</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Új Kutyák</title>
+</head>
+<body>
+<div style=" width: 260px;
+             height: 210px; ">
 
 
-            <div style=" width: 260px;
-                                height: 210px; ">
+    <img src="https://exehf.com" style="width: 260px;
+                 max-height: 210px;  ">
+
+</div>
+
+<p class="name_p"></p>
+<p class="id_p"></p>
+<button id="prevbutton_all" style="margin-right: 45px;">vissza</button>
+<button id="nextbutton_all" style="margin-right: 45px;">elore</button>
+
+<script src="jquery-3.5.1.slim.js"></script>
+<script src="Data/DogBreedsClasses.js"></script>
+<script type="text/javascript">
+
+    list = getNewDogList();
 
 
-                <img src="https://exehf.com" style="width: 260px;
-                                                                          max-height: 210px;  ">
+    var ind = 0;
+    $('img').attr('src', list[ind]._dogPicURL);
+    $('.name_p').html(list[ind]._breedName);
+    $('.id_p').html(list[ind].id);
 
-            </div>
+    $('#prevbutton_all').click(function () {
+        ind--;
+        if (ind < 0) {
+            ind = list.length - 1;
+        }
 
-            <p></p>
-            <button id="prevbutton" style="margin-right: 45px;">vissza</button>
-            <button id="nextbutton" style="margin-right: 45px;">elore</button>
+        $('img').attr('src', list[ind]._dogPicURL);
+        $('.name_p').html(list[ind]._breedName);
+        $('.id_p').html(list[ind].id);
 
-            <script src="jquery-3.5.1.slim.js"></script>
-            <script>
+    });
 
-                var newDogs = {
-                    nd_path: [
-
-                        "Data/Pictures/whippet.jpg",
-                        "Data/NewDogs/angol_toy_spaniel.jpeg",
-                        "Data/Pictures/torpespicc.jpg",
-                        "Data/Pictures/torpe_pincher.jpg",
-                        "Data/Pictures/tacsko.jpg",
-                        "Data/Pictures/tibeti_terrier.jpg",
-                        "Data/Pictures/torpe_schnauzer.jpeg",
-                        "Data/Pictures/pekingi_palotakutya.jpg",
-                        "Data/Pictures/orosz_fek_terrier.jpg",
-                        "Data/Pictures/olasz_kopo.jpg",
-                        "Data/Pictures/uszkar.jpg",
-                        "Data/Pictures/spaniel.jpg",
-                        "Data/Pictures/skot_terrier.jpg",
-                        "Data/Pictures/skot_juhasz.jpg",
-                        "Data/Pictures/shar_pei.jpg",
-                        "Data/Pictures/si_cu.jpeg",
-                        "Data/Pictures/nemet_spicc.jpg",
-                        "Data/Pictures/maltai_selyem.jpg",
-                        "Data/Pictures/kinai_kopasz.jpg",
-                        "Data/Pictures/jack_russel.jpg",
-                        "Data/Pictures/havannai_pincs.jpg",
-                        "Data/Pictures/francia_bull.jpg",
-                        "Data/Pictures/farao_ku.jpg",
-                        "Data/Pictures/erdelyi_kopo.jpg",
-                        "Data/Pictures/csivava.jpg",
-                        "Data/Pictures/csau.jpg",
-                        "Data/Pictures/ausztr_terrier.jpg",
-                        "Data/Pictures/affenpincher.jpg", "Data/NewDogs/beagle.jpg",
-                        "Data/NewDogs/drotsz_foxterrier.jpg", "Data/NewDogs/brusseeli_griffon.jpg",
-                        "https://img.point.pet/44554800/544544544/444545875_106.jpg",
-
-                        "https://www.kutya-tar.hu/kutyak2/ausztral-selyemszoru-terrier/ausztral-selyemszoru-terrier.jpg",
-                        "https://img-01.cdn.amarqt.com/kutya/hd/ausztral-terrier-1.jpg",
-                        'Data/Pictures/basenji.jpg',
-                        'https://img-04.cdn.amarqt.com/magazine/fajtak/hd/basset-hound-fajtastandard-1.jpg',
-                        'https://cdn3-www.dogtime.com/assets/uploads/2019/08/biewer-terrier-dog-breed-pictures-cover.jpg',
-                        "https://img-02.cdn.amarqt.com/kutya/lightbox/cairn-terrier-1.jpg",
-                        'Data/Pictures/muki.jpg', "Data/Pictures/afghan_agar.jpg",
-                        "Data/Pictures/angol_agar.jpg",
-                        "Data/Pictures/ausztr_juhasz.jpg",
-                        "Data/Pictures/belga_juhasz.jpg",
-                        "Data/Pictures/border_collie.jpg",
-                        "Data/Pictures/dalmata.jpg",
-                        "Data/Pictures/eszkimo.jpg",
-                        "Data/Pictures/golden_retr.jpg",
-                        "Data/Pictures/ir_szetter.jpg",
-                        "Data/Pictures/komondor.jpg",
-                        "Data/Pictures/kuvasz.jpg",
-                        "Data/Pictures/labrador.jpg",
-                        "Data/Pictures/magyar_agar.jpg",
-                        "Data/Pictures/mopsz.jpg",
-                        "Data/Pictures/mudi.jpg",
-                        "Data/Pictures/nemet_juhasz.jpg",
-                        "Data/Pictures/nemet_vizsla.jpg",
-                        "Data/Pictures/olasz_agar.jpg",
-                        "Data/Pictures/puli.jpg",
-                        "Data/Pictures/pumi.jpg",
-                        "Data/Pictures/spanyol_kopo.jpg",
-                        "Data/Pictures/m_vizsla.jpg",
-                        "Data/NewDogs/barbet.jpg",
-                        "Data/NewDogs/dingo.jpg",
-                        "Data/NewDogs/ir_vizispaniel.jpg",
-                        "Data/NewDogs/pointer.jpg",
-                        "Data/NewDogs/skot_szarvasagar.jpg",
-                        "https://kutyafajtak.hu/kepek/portugal-vizikutya/portugal-vizikutya-04.jpg",
-                        "Data/Pictures/kar_medve_kutya.jpg", "Data/Pictures/karpati_juhasz.jpg", "Data/Pictures/husky.jpeg",
-
-                        "Data/Pictures/gorlandi_kutya.jpg", "Data/Pictures/dobberman.jpg", "Data/Pictures/canne_corso.jpeg",
-                        "Data/Pictures/bullmasztif.jpg", "Data/Pictures/boxer.jpeg", "Data/Pictures/bordoi_dog.jpg", "Data/Pictures/bernathegyi.png",
-                        "Data/Pictures/berni_pasztor.jpg", "Data/Pictures/atlaszi_hegyikutya.jpg", "Data/Pictures/argentin_dog.jpeg",
-                        "Data/Pictures/angol_bulldog.jpg", "Data/Pictures/amerikai_bulldog.jpg", "Data/Pictures/alaszkai_malam.jpg",
-                        "Data/Pictures/akita_inu.jpeg", 'Data/Pictures/afr_oroszl_kutya.jpg', "Data/Pictures/abruzzo_juhasz.jpg",
-                        "Data/Pictures/australskakelpie.jpg",
-
-                        "Data/Pictures/napolyi_masztiff.png",
-                        "Data/Pictures/nemet_dog.jpg",
-
-                        "Data/Pictures/pireneusi_masztif.jpg",
-
-                        "Data/Pictures/rottweiler.jpg",
-
-                        "Data/Pictures/staffi_terrier.jpg",
-
-                        "Data/Pictures/ujfullandi.jpg",
-                        "Data/NewDogs/bobtail.jpg",
-                        "https://www.pet4you.hu/img/big/amerikai_akita3.jpg",
-                        'Data/Pictures/lusy.jpg',
-                        'https://www.kutya-tar.hu/kutyak1/miniatur-bullterrier/miniatur-bullterrier.jpg'
+    $('#nextbutton_all').click(function () {
+        ind++;
+        if (ind > list.length - 1) {
 
 
-                    ],
-                    nd_name: [
+            ind = 0;
+        }
+        $('img').attr('src', list[ind]._dogPicURL);
+        $('.name_p').html(list[ind]._breedName);
+        $('.id_p').html(list[ind].id);
 
-                        "Whipet", "Angol Toy Spániel", "Törpe Spicc", "Törpe Pincher",
-                        "Tacskó", "Tibeti Terrier", "Törpe Schnauzer",
-                        "Pekingi Palotakutya", "Orosz Fekete Terrier",
-                        "Olasz Kopó", "Uszkár", "Spániel", "Skót Terrier",
-                        "Skót Juhász", "Shar-Pei", "Si-cu", "Német Spicc", "Máltai Selyemkutya",
-                        "Kínai Kopaszkutya", "Jack Russel Terrier", "Havannai Pincher", "Francia Bulldog", "Fáraókutya",
-                        "Erdélyi Kopó", "Csivava", "Csau-csau", "Auszrtál Terrier", "Affenpincher", "Beagle", "Drótszőrű Foxterrier",
-                        "Brüsszeli Griffon", "Kis Oroszlánkutya",
-                        'Ausztrál selyemszőrű terrier',
-                        'Ausztrál Terrier',
-                        "Basenji",
-                        'Basset Hound', 'Biewer Terrirer', 'Cairn Terrier',
-                        'Tököli Kóbór Terrier',
-                        'Afgán Agár', 'Angol Agár', 'Auszrál Juhász', 'Belga Juhász', 'Border Collie',
-                        'Dalmata', 'Eszkimókutya', 'Golden Retriver', 'Ír szetter', 'Komondor', 'Kuvasz',
-                        'Labrador', 'Magyar Agár', 'Mopsz', 'Mudi', 'Német Juhász', 'Német Vizsla', 'Olasz Agár', 'Puli'
-                        , 'Pumi', 'Spanyol Kopó', 'Magyar Vizsla', "Barbet", "Dingo",
-                        "Ír vizispániel", "Pointer", "Skót Szarvasagár","Portugál Vizikutya",
-                        'Karéliai Medvekutya', 'Kárpáti Pásztor', 'Husky', "Görnlandi Kutya", 'Dobberman', 'Canne Corso'
-                        , 'Bullmasztif', 'Boxer', 'Bordeauxi Dog', 'Bernáthegyi', 'Berni Pásztor', 'Atlaszi Hegyikutya'
-                        , "Argentín Dog", 'Angol Bulldog', 'Amerikai Bulldog', 'Alaszkai Malamut', 'Akita Inu', 'Afrikai Oroszlánkutya',
-                        'Abbrúzoi Juhász', 'Ausztrál Kelpie', 'Nápolyi Massztif', 'Német Dog', 'Pireneusi Masztiff', "Rottweiler",
-                        'Staffordshire Terrier', 'Újfullandi', "Bobtail", "Amerikai Akita","Denevér fülű pitnyúl","Mini Bullterrier"
-                        
-                        
-
-                    ]
-                };
+    });
 
 
 
-
-                var ind = 0;
-                $('img').attr('src', newDogs.nd_path[ind]);
-                $('p').html(newDogs.nd_name[ind]);
-
-                $('#prevbutton').click(function () {
-                    if (ind > 0) {
-                        ind--;
-                        $('img').attr('src', newDogs.nd_path[ind]);
-                        $('p').html(newDogs.nd_name[ind]);
-                    }
-                });
-
-                $('#nextbutton').click(function () {
-                    if (ind < newDogs.nd_name.length-1) {
-                        ind++;
-                        $('img').attr('src', newDogs.nd_path[ind]);
-                        $('p').html(newDogs.nd_name[ind]);
-                    }
-                });
-
-
-            </script>
-
-
-    </body>
-
+</script>
+</body>
 </html>
