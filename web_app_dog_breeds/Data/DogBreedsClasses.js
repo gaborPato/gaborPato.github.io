@@ -93,7 +93,7 @@ var all_dogList = [
     new Vizsla_Kopo_SpanielGroup('Ír szetter','Data/Pictures/ir_szetter.jpg'),
     new PuliGroup('Csau-csau','Data/Pictures/csau.jpg'),
     new PuliGroup('Shar-Pei',"Data/Pictures/shar_pei.jpg"),
-    new PuliGroup('Beagle',"Data/Pictures/beagle.jpg"),
+    new Vizsla_Kopo_SpanielGroup('Beagle',"Data/Pictures/beagle.jpg"),
     new PuliGroup('Puli',"https://www.zooplus.hu/magazin/wp-content/uploads/2019/01/Puli.jpg"),
     new PuliGroup('Basset Huond',"https://img-05.cdn.amarqt.com/animals/kutya/basset-hound/detailed/1-untitled-31e6b6d2-a014-447b-9364-048b5681656a-1.jpg"),
     new Vizsla_Kopo_SpanielGroup('Portugál Vizikutya',"https://kutyafajtak.hu/kepek/portugal-vizikutya/portugal-vizikutya-04.jpg"),
@@ -155,7 +155,13 @@ var all_dogList = [
     new Vizsla_Kopo_SpanielGroup('Orosz Spániel','https://c.pxhere.com/photos/28/0e/welsh_springer_spaniel_dog_pet_canine_nature_outside-1128944.jpg!s'),
     new Vizsla_Kopo_SpanielGroup('Francia Spániel','https://www.kutya-tar.hu/kutyak2/francia-spaniel/francia-spaniel.jpg'),
     new Vizsla_Kopo_SpanielGroup('Pikárdiai Spániel','https://img-03.cdn.amarqt.com/kutya/hd/pikardiai-spaniel-1.jpg'),
-    new Vizsla_Kopo_SpanielGroup('Pikárdiai Kék Spániel','https://img-04.cdn.amarqt.com/kutya/hd/pikardiai-kek-spaniel-1.jpg')
+    new Vizsla_Kopo_SpanielGroup('Pikárdiai Kék Spániel','https://img-04.cdn.amarqt.com/kutya/hd/pikardiai-kek-spaniel-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Billy','https://img-02.cdn.amarqt.com/kutya/hd/billy-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Finn Kopó','https://img-05.cdn.amarqt.com/animals/kutya/finn-kopo/lightbox/1-untitled-bb547953-6bac-4f22-a4fa-5f1457b85094-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Szlovák Kopó','https://img-05.cdn.amarqt.com/kutya/hd/szlovak-kopo-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Vidravadász Kopó','https://img-01.cdn.amarqt.com/kutya/hd/vidrakopo-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Szávavölgyi Kopó','https://img-05.cdn.amarqt.com/animals/kutya/szavavolgyi-kopo/lightbox/0-untitled-a4eb0516-c86f-400a-a131-9ee15427c67a-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Halden Kopó','https://img-02.cdn.amarqt.com/kutya/hd/halden-kopo-1.jpg'),
 
 ];
 function getAllDogList() {
@@ -164,18 +170,16 @@ function getAllDogList() {
 
 }
  var newDogList=[
-     new Vizsla_Kopo_SpanielGroup('Boykin Spániel','https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Boykin-Spaniel-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Orosz Spániel','https://c.pxhere.com/photos/28/0e/welsh_springer_spaniel_dog_pet_canine_nature_outside-1128944.jpg!s'),
-     new Vizsla_Kopo_SpanielGroup('Francia Spániel','https://www.kutya-tar.hu/kutyak2/francia-spaniel/francia-spaniel.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Pikárdiai Spániel','https://img-03.cdn.amarqt.com/kutya/hd/pikardiai-spaniel-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Pikárdiai Kék Spániel','https://img-04.cdn.amarqt.com/kutya/hd/pikardiai-kek-spaniel-1.jpg'),
 
-     new Vizsla_Kopo_SpanielGroup('Billy','https://img-02.cdn.amarqt.com/kutya/hd/billy-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Finn Kopó','https://img-05.cdn.amarqt.com/animals/kutya/finn-kopo/lightbox/1-untitled-bb547953-6bac-4f22-a4fa-5f1457b85094-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Szlovák Kopó','https://img-05.cdn.amarqt.com/kutya/hd/szlovak-kopo-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Vidravadász Kopó','https://img-01.cdn.amarqt.com/kutya/hd/vidrakopo-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Szávavölgyi Kopó','https://img-05.cdn.amarqt.com/animals/kutya/szavavolgyi-kopo/lightbox/0-untitled-a4eb0516-c86f-400a-a131-9ee15427c67a-1.jpg'),
-     new Vizsla_Kopo_SpanielGroup('Halden Kopó','https://img-02.cdn.amarqt.com/kutya/hd/halden-kopo-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Artois-i Kopó','https://img-02.cdn.amarqt.com/animals/kutya/artois-i-kopo/lightbox/0-untitled-a96e4ccc-e856-4306-ba04-5c612da57c8b-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Angol Véreb','https://img-03.cdn.amarqt.com/animals/kutya/angol-vereb/detailed/0-untitled-dcb4ff98-9491-4a0b-a3ac-cf160ea41772-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Bajor Hegyi Véreb','https://img-04.cdn.amarqt.com/kutya/hd/bajor-hegyi-vereb-1.jpg'),
+     new Vizsla_Kopo_SpanielGroup('Burgosi Vizsla','https://img-03.cdn.amarqt.com/kutya/hd/burgosi-vizsla-1.jpg'),
+ 	 new MukiKutyaGroup('Bolognai Pincs','https://img-02.cdn.amarqt.com/magazine/fajtak/big/bolognese-fajtastandard-1.jpg'),
+ 	 new HarciKutyaGroup('Brazil Masztiff','https://img-05.cdn.amarqt.com/kutya/hd/brazil-masztiff-1.jpg'),
+ 	 new HarciKutyaGroup('Amerikai Bandog','https://kutyafajtak.hu/kepek/amerikai-bandog-kutya/amerikai-bandog-kutya-02.jpg'),
+ 	 new PuliGroup('Bergamoi Juhász','https://img-02.cdn.amarqt.com/kutya/lightbox/bergamoi-juhaszkutya-1.jpg'),
+ 	 new PuliGroup('Délorosz Juhász','https://img-01.cdn.amarqt.com/kutya/hd/delorosz-juhaszkutya-1.jpg'),
  ];
 
  function getNewDogList(){return newDogList}
