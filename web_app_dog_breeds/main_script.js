@@ -2,6 +2,7 @@ var quiz_Answer;
 var answers;
 var q_counter;
 var rightAnswer;
+const errPicUrl ="https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/err/sorry.jpg?raw=true";
 const breedClassIndex=0;
 const changableAnswerArrayIndex=1;
 

@@ -4,12 +4,25 @@
         <meta charset="UTF-8">
         <title>AllDogs</title>
     </head>
+    <script src="jquery-3.5.1.slim.js"></script>
+    <script src="Data/DogBreedsClasses.js"></script>
+    <script type="application/javascript">
+
+        function loadErrorImage() {
+
+            console.log("loadErrorImage");
+
+            var errImgUrl = "https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/err/sorry.jpg?raw=true";
+            $('img').attr('src',errImgUrl);
+
+        }
+    </script>
     <body>
         <div style=" width: 260px;
              height: 210px; ">
 
 
-            <img src="https://exehf.com" style="width: 260px;
+            <img src="https://exehf.com" onerror="loadErrorImage()" style="width: 260px;
                  max-height: 210px;  ">
 
         </div>
@@ -19,8 +32,7 @@
         <button id="prevbutton_all" style="margin-right: 45px;">vissza</button>
         <button id="nextbutton_all" style="margin-right: 45px;">elore</button>
 
-        <script src="jquery-3.5.1.slim.js"></script>
-        <script src="Data/DogBreedsClasses.js"></script>
+
         <script type="text/javascript">
 
             list = getAllDogList();

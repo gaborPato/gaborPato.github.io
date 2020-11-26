@@ -82,6 +82,7 @@
       <workItem from="1593236677248" duration="102000" />
       <workItem from="1594839878242" duration="656000" />
       <workItem from="1606401522750" duration="346000" />
+      <workItem from="1606402480388" duration="5200000" />
     </task>
     <servers />
   </component>
@@ -97,5 +98,9 @@
       <screen x="158" y="1080" width="1366" height="768" />
     </state>
     <state x="330" y="1080" width="1131" height="768" key="SettingsEditor/158.1080.1366.768/0.0.1366.768@158.1080.1366.768" timestamp="1606401820754" />
+    <state x="276" y="1134" width="1372" height="771" maximized="true" key="dock-window-1" timestamp="1606417571874">
+      <screen x="158" y="1080" width="1366" height="768" />
+    </state>
+    <state x="276" y="1134" width="1372" height="771" maximized="true" key="dock-window-1/158.1080.1366.768/0.0.1366.768@158.1080.1366.768" timestamp="1606417571874" />
   </component>
 </project>

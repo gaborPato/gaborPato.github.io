@@ -12,12 +12,16 @@
     </head>
     <body>
         <script src="jquery-3.5.1.slim.js"></script>
+        <script src="Data/DogBreedsClasses.js"></script>
+
+
         <script type="text/javascript">
 
             function loadErrorImage() {
 
-            let errPicUrl ="Data/Pictures/err/sorry.jpg";
+
             $('#actualy_pictures').attr('src',errPicUrl);
+            rightAnswer++;
             }
         </script>
         <div class="img_label_div">
@@ -27,7 +31,7 @@
                  display: block;">
 
 
-                <img id="actualy_pictures" src="https://example.com"
+                <img id="actualy_pictures" onerror="loadErrorImage()"
                      style="
                      width: 260px;
                      max-height: 205px; "/>
@@ -52,8 +56,6 @@
 
 
         <!--scripts-->
-
-        <script src="Data/DogBreedsClasses.js"></script>
 
         <script src="main_script.js"></script>
 
