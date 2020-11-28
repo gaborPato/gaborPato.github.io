@@ -122,7 +122,6 @@ var all_dogList = [
     new MukiKutyaGroup('Tibeti Terrier', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/tibeti_terrier.jpg'+URL_END),
     new MukiKutyaGroup('Törpe Spicc', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/torpespicc.jpg'+URL_END),
 
-   /* new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup("errortest","blabla.jpg"),
@@ -160,7 +159,8 @@ var all_dogList = [
     new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup("errortest","blabla.jpg"),
-    new MukiKutyaGroup("errortest","blabla.jpg"),*/
+    new MukiKutyaGroup("errortest","blabla.jpg"),
+    new MukiKutyaGroup("errortest","blabla.jpg"),
     new MukiKutyaGroup('Cseh Terrier', 'https://www.kutya-tar.hu/kutyak1/cseh-terrier/cseh-terrier-01.jpg'),
     new MukiKutyaGroup('Pekingi Palotakutya', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/pekingi_palotakutya.jpg'+URL_END),
     new MukiKutyaGroup('Skót terrier', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/skot_terrier.jpg'+URL_END),
