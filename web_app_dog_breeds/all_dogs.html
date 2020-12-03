@@ -16,13 +16,17 @@
             $('img').attr('src',errImgUrl);
 
         }
+        function onLoadTest() {
+            console.log("image is loaded");
+
+        }
     </script>
     <body>
         <div style=" width: 260px;
              height: 210px; ">
 
 
-            <img src="https://exehf.com" onerror="loadErrorImage()" style="width: 260px;
+            <img src="https://exehf.com" onerror="loadErrorImage()" onload="onLoadTest()" style="width: 260px;
                  max-height: 210px;  ">
 
         </div>

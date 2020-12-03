@@ -49,6 +49,8 @@ function loadDataToHtml(){
    // $('label').css('color','black');
     $('input[name=answ]').prop('checked',false);
     $('img').attr('src',quiz_Answer[q_counter][breedClassIndex]._dogPicURL);
+
+
     for (i=0;i<answers.length;i++){
         $('label[for='+i+']').html(answers[q_counter][i]);
         $('label[for='+i+']').prev().val(answers[q_counter][i]);
@@ -97,7 +99,8 @@ var allLabels= document.getElementsByTagName('label');
         q_counter++;
         if (q_counter<QUESTION_QUIZ_NUMBER){
 
-            loadDataToHtml()
+            loadDataToHtml();
+            $('#actualy_pictures').hide();
         }else if (q_counter==QUESTION_QUIZ_NUMBER) {
             let command='<button id="new_game" class="control_button new_game_button" onclick="newGameClick()">Új játék</button>';
             $('.button_div').append(command);

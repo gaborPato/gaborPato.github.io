@@ -24,6 +24,9 @@
             $('#actualy_pictures').attr('src',errPicUrl);
             rightAnswer++;
             }
+           function showPicture(){
+                $('#actualy_pictures').show();
+           }
         </script>
         <div class="img_label_div">
             <div style="
@@ -33,6 +36,7 @@
 
 
                 <img id="actualy_pictures" onerror="loadErrorImage()"
+                     onload="showPicture()"
                      style="
                      width: 260px;
                      max-height: 205px; "/>
