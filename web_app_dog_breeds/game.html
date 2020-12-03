@@ -24,22 +24,25 @@
             $('#actualy_pictures').attr('src',errPicUrl);
             rightAnswer++;
             }
-           function showPicture(){
-                $('#actualy_pictures').show();
-           }
+
         </script>
         <div class="img_label_div">
             <div style="
                  width: 260px;
                  height: 205px;
-                 display: block;">
+                 display: block;
+                 background-image: url('Data/loading.gif')";>
 
 
                 <img id="actualy_pictures" onerror="loadErrorImage()"
-                     onload="showPicture()"
+
+
                      style="
                      width: 260px;
-                     max-height: 205px; "/>
+                     max-height: 205px;
+
+
+                                        "/>
 
             </div>
             <input type="radio" id="0" name="answ">

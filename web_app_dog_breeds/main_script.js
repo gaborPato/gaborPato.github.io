@@ -47,8 +47,27 @@ function loadDataToHtml(){
    showResult();
    changeLabelColor();
    // $('label').css('color','black');
+
+
     $('input[name=answ]').prop('checked',false);
-    $('img').attr('src',quiz_Answer[q_counter][breedClassIndex]._dogPicURL);
+    var actualImage = new Image();
+    actualImage.src = quiz_Answer[q_counter][breedClassIndex]._dogPicURL;
+    $('img').attr('src',actualImage.src);
+
+
+
+
+
+
+
+
+
+  /*  $(actualImage).load(function () {
+
+
+    });*/
+
+   /// $('#actualy_pictures').attr('src',quiz_Answer[q_counter][breedClassIndex]._dogPicURL);
 
 
     for (i=0;i<answers.length;i++){
@@ -98,9 +117,10 @@ var allLabels= document.getElementsByTagName('label');
         $('#tipp').prop('disabled',false);
         q_counter++;
         if (q_counter<QUESTION_QUIZ_NUMBER){
-
+            $('img').attr('src','');
             loadDataToHtml();
-            $('#actualy_pictures').hide();
+
+
         }else if (q_counter==QUESTION_QUIZ_NUMBER) {
             let command='<button id="new_game" class="control_button new_game_button" onclick="newGameClick()">Új játék</button>';
             $('.button_div').append(command);
