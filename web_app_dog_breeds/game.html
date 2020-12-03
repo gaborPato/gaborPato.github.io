@@ -25,16 +25,29 @@
             rightAnswer++;
             }
 
+            function remB() {
+
+                $('#div_inner').css('background-image','none !important');
+                console.log("change");
+            }
+          /*  function changeBCKG() {
+
+
+
+                $('.img_label_div').css('background-image',"url('Data/default_backg.jpeg')");
+
+            }*/
+
         </script>
         <div class="img_label_div">
-            <div style="
+            <div  id="div_inner" style="
                  width: 260px;
                  height: 205px;
                  display: block;
                  background-image: url('Data/loading.gif')";>
 
 
-                <img id="actualy_pictures" onerror="loadErrorImage()"
+                <img id="actualy_pictures" onerror="loadErrorImage()"  onload="remB()"
 
 
                      style="
