@@ -139,6 +139,7 @@ function newGameClick() {
 
     $('#new_game').remove();
     $('#tipp').prop('disabled',false);
+    $('img').attr('src','');
     initStart();
 
 }
