@@ -16,7 +16,7 @@
 
 
         <script type="text/javascript">
-            const errPicUrl ="Data/err/sorry.jpg";
+            const errPicUrl ="Data/images/sorry.jpg";
 
             function loadErrorImage() {
 
@@ -25,18 +25,13 @@
             rightAnswer++;
             }
 
-            function remB() {
+            function removeBackground() {
 
-                $('#div_inner').css('background-image','none !important');
+                 document.getElementById('div_inner').style.background = 0;
+
                 console.log("change");
             }
-          /*  function changeBCKG() {
 
-
-
-                $('.img_label_div').css('background-image',"url('Data/default_backg.jpeg')");
-
-            }*/
 
         </script>
         <div class="img_label_div">
@@ -44,10 +39,10 @@
                  width: 260px;
                  height: 205px;
                  display: block;
-                 background-image: url('Data/loading.gif')";>
+                 background-image: url('Data/images/loading.gif')";>
 
 
-                <img id="actualy_pictures" onerror="loadErrorImage()"  onload="remB()"
+                <img id="actualy_pictures" onerror="loadErrorImage()"  onload="removeBackground()"
 
 
                      style="

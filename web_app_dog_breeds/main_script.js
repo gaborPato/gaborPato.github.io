@@ -12,6 +12,7 @@ const darkYellow='rgb(199, 196, 50)';
 var labelGreen;
 var labelRed;
 const bca='background-color';
+const loadingGifPath = "url('Data/images/loading.gif')";
 
 
 $('body').css(bca,dailyColor);
@@ -48,6 +49,7 @@ function loadDataToHtml(){
    changeLabelColor();
    // $('label').css('color','black');
 
+$('#div_inner').css('background-image',loadingGifPath);
 
     $('input[name=answ]').prop('checked',false);
     var actualImage = new Image();
@@ -118,6 +120,7 @@ var allLabels= document.getElementsByTagName('label');
         q_counter++;
         if (q_counter<QUESTION_QUIZ_NUMBER){
             $('img').attr('src','');
+
             loadDataToHtml();
 
 
