@@ -89,6 +89,7 @@ var all_dogList = [
     new NemetJuhaszGroup('Amerikai Akita', 'https://www.zooplus.hu/magazin/wp-content/uploads/2018/03/american-akita-welpe-1024x731.jpg'),
     new Vizsla_Kopo_SpanielGroup('Olasz Kopó', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/olasz_kopo.jpg'+URL_END),
     new Vizsla_Kopo_SpanielGroup('Erdélyi Kopó', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/erdelyi_kopo.jpg'+URL_END),
+    new Vizsla_Kopo_SpanielGroup('Nivernais-i griffon', 'https://www.kutya-tar.hu/kutyak2/nivernaisi-griffon/nivernaisi-griffon.jpg'),
     new PuliGroup('Bobtail', 'https://upload.wikimedia.org/wikipedia/commons/9/91/Bobtail_als_Integrationshund.JPG'),
     new Vizsla_Kopo_SpanielGroup('Ausztrál Kelpie', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/australskakelpie.jpg'+URL_END),
 
@@ -180,8 +181,7 @@ var all_dogList = [
     new MukiKutyaGroup('Csivava', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/csivava.jpg'+URL_END),
     new MukiKutyaGroup('Ausztrál terrier', 'https://img-01.cdn.amarqt.com/kutya/hd/ausztral-terrier-1.jpg'),
     new MukiKutyaGroup('Affenpincser', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/affenpincher.jpg'+URL_END),
-    new NemetJuhaszGroup('Pomázi Hordócska', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/tipike.jpg'+URL_END),
-    new HarciKutyaGroup('Bernáthegyi', 'https://www.zooplus.hu/magazin/wp-content/uploads/2017/03/bernhardiner-im-schnee.jpg'),
+    new HarciKutyaGroup('Bernáthegyi', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/bernathegyi.jpg'+URL_END),
     new HarciKutyaGroup('Denevérfülű Pit-Nyúl', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/lusy.jpg'+URL_END),
     new HarciKutyaGroup('Amerikai Bulldog', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/amerikai_bulldog.jpg'+URL_END),
     new HarciKutyaGroup('Angol Bulldog', 'https://github.com/gaborPato/gaborPato.github.io/blob/master/DogsForGame/angol_bulldog.jpg'+URL_END),

@@ -57,7 +57,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,19 +95,20 @@
       <workItem from="1607015418413" duration="2625000" />
       <workItem from="1607061528103" duration="599000" />
       <workItem from="1607083148879" duration="2368000" />
-      <workItem from="1607151528898" duration="729000" />
-      <workItem from="1607153054007" duration="607000" />
+      <workItem from="1607269162029" duration="117000" />
+      <workItem from="1607269610599" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="1193" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606401864104">
-      <screen x="158" y="1080" width="1366" height="768" />
+    <state x="422" y="887" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607269207206">
+      <screen x="39" y="768" width="1440" height="810" />
     </state>
     <state x="521" y="1193" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/158.1080.1366.768/0.0.1366.768@158.1080.1366.768" timestamp="1606401864104" />
+    <state x="422" y="887" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/39.768.1440.810/88.0.1278.768@39.768.1440.810" timestamp="1607269207206" />
     <state x="330" y="1080" width="1131" height="768" key="SettingsEditor" timestamp="1606401820754">
       <screen x="158" y="1080" width="1366" height="768" />
     </state>
