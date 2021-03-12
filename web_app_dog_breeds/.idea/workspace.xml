@@ -95,6 +95,12 @@
       <workItem from="1607015418413" duration="2625000" />
       <workItem from="1607061528103" duration="599000" />
       <workItem from="1607083148879" duration="2368000" />
+      <workItem from="1607269162029" duration="117000" />
+      <workItem from="1607269610599" duration="770000" />
+      <workItem from="1609414250448" duration="2239000" />
+      <workItem from="1609435236383" duration="110000" />
+      <workItem from="1609440905879" duration="23000" />
+      <workItem from="1615578967721" duration="2206000" />
     </task>
     <servers />
   </component>
@@ -102,10 +108,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="1193" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606401864104">
-      <screen x="158" y="1080" width="1366" height="768" />
+    <state x="422" y="887" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607269207206">
+      <screen x="39" y="768" width="1440" height="810" />
     </state>
     <state x="521" y="1193" width="636" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/158.1080.1366.768/0.0.1366.768@158.1080.1366.768" timestamp="1606401864104" />
+    <state x="422" y="887" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/39.768.1440.810/88.0.1278.768@39.768.1440.810" timestamp="1607269207206" />
     <state x="330" y="1080" width="1131" height="768" key="SettingsEditor" timestamp="1606401820754">
       <screen x="158" y="1080" width="1366" height="768" />
     </state>
